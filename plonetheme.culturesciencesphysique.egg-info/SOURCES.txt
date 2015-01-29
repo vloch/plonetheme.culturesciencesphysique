@@ -1,5 +1,6 @@
 MANIFEST.in
 README.txt
+plonetheme.culturesciencesphysique-configure.zcml
 setup.cfg
 setup.py
 plonetheme/__init__.py
