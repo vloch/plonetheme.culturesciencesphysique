@@ -1,0 +1,86 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="plonetheme.culturesciencesphysique">
+
+  <!-- 'CultureSciencesPhysique' Zope 3 browser layer
+    Register views, viewlets and resources for this layer to make sure
+    they only apply to the 'CultureSciencesPhysique' theme.
+    You can also use this layer to override default Plone browser views
+    and viewlets only within the 'CultureSciencesPhysique' theme.
+  -->
+  <interface
+      interface=".interfaces.IThemeSpecific"
+      type="zope.publisher.interfaces.browser.IBrowserSkinType"
+      name="CultureSciencesPhysique"
+      />
+
+  <!-- Viewlets registration -->
+  <!-- EXAMPLE (UNCOMMENT TO MAKE AVAILABLE):
+  <browser:viewlet
+      name="plonetheme.someviewlet"
+      manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+      class=".viewlets.MyViewlet"
+      layer=".interfaces.IThemeSpecific"
+      permission="zope2.View"
+      />
+  -->
+
+  <!-- The logo -->
+  <browser:viewlet
+      name="csp.logo"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      class=".viewlets.LogoViewlet"
+      permission="zope2.View"
+      />
+
+  <browser:viewlet
+      name="csp.banner"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      class=".viewlets.BannerViewlet"
+      permission="zope2.View"
+      />
+
+  <!-- Zope 3 browser resources -->
+
+  <!-- Resource directory for images
+    See plonetheme/culturesciencesphysique/browser/images/README.txt
+    for more information about registering images as Zope 3 browser
+    resources.
+  -->
+  <browser:resourceDirectory
+      name="plonetheme.culturesciencesphysique.images"
+      directory="images"
+      layer=".interfaces.IThemeSpecific"
+      />
+
+  <!-- Resource directory for stylesheets
+    See plonetheme/culturesciencesphysique/browser/stylesheets/README.txt
+    for more information about registering stylesheets as Zope 3 browser
+    resources.
+  -->
+  <browser:resourceDirectory
+      name="plonetheme.culturesciencesphysique.stylesheets"
+      directory="stylesheets"
+      layer=".interfaces.IThemeSpecific"
+      />
+
+  <browser:resourceDirectory
+      name="plonetheme.culturesciencesphysique.javascripts"
+      directory="javascripts"
+      layer=".interfaces.IThemeSpecific"
+      />
+      
+        <!-- Render the dropdown menu -->
+    <browser:viewlet
+        name="plone.global_sections_csp"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        class="webcouturier.dropdownmenu.browser.dropdown.DropdownMenuViewlet"
+        template="templates/sections.pt"
+        permission="zope2.View"
+        />
+<!-- removed viewlet in template="viewlets/templates/sections.pt" and
+renamed  "plone.global_sections" to "plone.global_sections_pt"
+layer="webcouturier.dropdownmenu.browser.interfaces.IDropdownSpecific"
+-->
+</configure> 

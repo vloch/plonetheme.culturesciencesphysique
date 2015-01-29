@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: plonetheme.culturesciencesphysique
+Version: 1.0
+Summary: An installable theme for Plone 4
+Home-page: http://svn.plone.org/svn/collective/
+Author: Quadra Informatique
+Author-email: encolpe.degoute@quadra-informatique.fr
+License: Cecill-B
+Description: Introduction
+        ============
+        
+        
+        
+        This product may contain traces of nuts.
+        
+        Changelog
+        =========
+        
+        1.0dev (unreleased)
+        -------------------
+        
+        - Initial release
+        
+Platform: UNKNOWN
+Classifier: Framework :: Plone
+Classifier: Programming Language :: Python

@@ -1,0 +1,55 @@
+<dl tal:attributes="class string:portlet portletRessources ${view/css_class}"
+    i18n:domain="plone">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <span class="tile" tal:content="view/data/header">
+           <!--a class="tile"
+              tal:omit-tag="not:view/has_link"
+              tal:attributes="href view/data/more_url"
+              tal:content="view/data/header"
+              /-->
+        </span>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    <dd class="portletItem odd">
+        <!--div tal:replace="structure view/data/text"/-->
+        <div>
+            <ul>
+                <li> <a href="" tal:attributes="href string:${context/portal_url}/recently_published">Nouveautés du site</a></li>
+                <li> <a href="" tal:attributes="href string:${context/portal_url}/par_theme">Classement par thèmes scientifiques</a></li>
+                <li> <a href="" tal:attributes="href string:${context/portal_url}/par_type_de_ressource">Classement par types pédagogiques</a></li>
+                <li> <a href="" tal:attributes="href string:${context/portal_url}/programmes">Programmes officiels</a></li>
+                <li> <a href="" tal:attributes="href string:${context/portal_url}/dossiersthematiques">Dossiers thématiques</a></li>
+                <li> <a href="" tal:attributes="href string:${context/portal_url}/themesconv">Thèmes de convergence</a></li>
+                <li> <a href="" tal:attributes="href string:${context/portal_url}/pluridisciplinarite">Ressources pluridisciplinaires</a></li>
+                <li> <a href="" tal:attributes="href string:${context/portal_url}/au-hasard">Ressource au hasard</a></li>
+                <li> <a href="" tal:attributes="href string:${context/portal_url}/a-la-une">À la une</a></li>
+                <li> <a href="" tal:attributes="href string:${context/portal_url}/les-ressources-les-plus-vues">Ressources les plus vues</a></li>
+                <li> <a href="" tal:attributes="href string:${context/portal_url}/par_type_de_ressource?part=//Physique&obj=&media=téléchargement">Ressources téléchargeables</a></li>
+                <li> <a href="" tal:attributes="href string:${context/portal_url}/archives">Archives</a></li>
+                <li> <a href="" tal:attributes="href string:${context/portal_url}/search_exist_form">Rechercher une ressource</a></li>
+            </ul>
+        
+        </div>
+        
+        <!--tal:corners condition="not:view/has_footer">
+            <span class="portletBottomLeft"></span>
+            <span class="portletBottomRight"></span>
+        </tal:corners-->
+    </dd>
+    
+    <!--dd class="portletFooter">
+        <span class="portletBottomLeft"></span>
+        <span>
+           <a class="tile"
+              tal:omit-tag="not:view/has_link"
+              tal:attributes="href view/data/more_url"
+              tal:content="view/data/footer"
+              />
+        </span>
+        <span class="portletBottomRight"></span>
+    </dd-->
+
+</dl>

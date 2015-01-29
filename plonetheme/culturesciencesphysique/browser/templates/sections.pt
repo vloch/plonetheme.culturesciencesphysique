@@ -1,0 +1,336 @@
+<tal:tabs tal:condition="view/portal_tabs"
+          i18n:domain="plone">
+    <h5 class="hiddenStructure" i18n:translate="heading_sections">Sections</h5>
+    <div id="globalnav-wrapper">
+        <ul id="portal-globalnav">
+          <!-- **************Menue Accueil*****************-->
+                <li id="portaltab-1" tal:attributes="class python:'selected' or 'plain'">
+                    <a href="" class="mainTabContent" tal:attributes="href string:${context/portal_url}" title="Accueil">Accueil</a>
+                </li>
+
+<!-- *********************Menu Ressources***************** -->
+                <li id="portaltab-2" tal:attributes="class python: 'selected' or 'plain'">
+                <a href="" title="Ressources" class="mainTabContent"
+                   tal:attributes="href string:${context/portal_url}/ressources"> Ressources </a>
+                    <ul class="submenu" id="ressources">
+                        <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/recently_published"
+                                class="state-published" title="Nouveautés du site">Nouveautés du site</a>
+                            </div>   
+                        </li>
+                        
+                        <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/par_theme"
+                                class="state-published" title="Classement par thèmes scientifiques">Classement par thèmes scientifiques</a>
+                            </div>   
+                        </li>
+                        
+                        <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/par_type_de_ressource"
+                                class="state-published" title="Classement par types de ressources">Classement par types de ressources</a>
+                            </div>   
+                        </li>
+                        
+                        <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/programmes"
+                                class="state-published" title="Programmes officiels">Programmes officiels</a>
+                            </div>   
+                        </li>
+                        
+                        <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/dossiersthematiques"
+                                class="state-published" title="Dossiers thématiques">Dossiers thématiques</a>
+                            </div>   
+                        </li>
+                        
+                        <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/themesconv"
+                                class="state-published" title="Thèmes de convergence">Thèmes de convergence</a>
+                            </div>   
+                        </li>
+                        
+                        <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/pluridisciplinarite"
+                                class="state-published" title="Pluridisciplinarité">Pluridisciplinarité</a>
+                            </div>   
+                        </li>
+                        
+                        <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/au-hasard"
+                                class="state-published" title="Ressource au hasard">Ressource au hasard</a>
+                            </div>   
+                        </li>
+                        
+                        <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/a-la-une"
+                                class="state-published" title="À la une">À la une</a>
+                            </div>   
+                        </li>
+                        
+                        <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/les-ressources-les-plus-vues"
+                                class="state-published" title="Les plus vues">Les plus vues</a>
+                            </div>   
+                        </li>
+                        
+                        <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/par_type_de_ressource?obj=&media=téléchargement&part=//Physique"
+                                class="state-published" title="Ressources téléchargeables">Ressources téléchargeables</a>
+                            </div>   
+                        </li>
+                        
+                         <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/search_exist_form"
+                                class="state-published" title="Recherche avancée">Recherche avancée</a>
+                            </div>   
+                        </li>
+
+                    </ul>
+                </li>
+
+<!-- *********************Menu Thèmes scientifiques***************** -->
+                <li id="portaltab-3" tal:attributes="class python: 'selected' or 'plain'">
+                <a href="" title="Thèmes scientifiques" class="mainTabContent"
+                   tal:attributes="href string:${context/portal_url}/par_theme"> Thèmes scientifiques </a>
+                    <ul class="submenu" id="themes">
+                        <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/par_theme?part=//Physique//Mécanique&obj="
+                                class="state-published" title="Mécanique">Mécanique</a>
+                            </div>   
+                        </li>
+                        
+                        <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/par_theme?part=//Physique//Oscillations, ondes&obj="
+                                class="state-published" title="Oscillations, ondes">Oscillations, ondes</a>
+                            </div>   
+                        </li>
+                        
+                        <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/par_theme?part=//Physique//Optique&obj="
+                                class="state-published" title="Optique">Optique</a>
+                            </div>   
+                        </li>
+                        
+                        <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/par_theme?part=//Physique//Electricité, magnétisme, électromagnétisme&obj="
+                                class="state-published" title="Electricité, magnétisme, électromagnétisme">Electricité, magnétisme, électromagnétisme</a>
+                            </div>   
+                        </li>
+                        
+                        <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/par_theme?part=//Physique//Atomes, noyaux et particules&obj="
+                                class="state-published" title="Atomes, noyaux et particules">Atomes, noyaux et particules</a>
+                            </div>   
+                        </li>
+                        
+                        <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/par_theme?part=//Physique//Physique à l'échelle astronomique&obj="
+                                class="state-published" title="Physique à l'échelle astronomique">Physique à l'échelle astronomique</a>
+                            </div>   
+                        </li>
+                        
+                        <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/par_theme?part=//Physique//Physique à l'échelle humaine&obj="
+                                class="state-published" title="Physique à l'échelle humaine">Physique à l'échelle humaine</a>
+                            </div>   
+                        </li>
+                        
+                        <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/par_theme?part=//Physique//Physique à l'échelle microscopique&obj="
+                                class="state-published" title="Physique à l'échelle microscopique">Physique à l'échelle microscopique</a>
+                            </div>   
+                        </li>
+                        
+                        <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/par_theme?part=//Physique//Théories quantique et relativiste&obj="
+                                class="state-published" title="Théories quantique et relativiste">Théories quantique et relativiste</a>
+                            </div>   
+                        </li>
+                        
+                        <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/par_theme?part=//Physique//Concepts, modèles, mesures, techniques et applications&obj="
+                                class="state-published" title="Concepts, modèles, mesures, techniques et applications">Concepts, modèles, mesures, techniques et applications</a>
+                            </div>   
+                        </li>
+                        
+                        <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/par_theme?part=//Physique//Sujets transversaux et transdisciplinaires&obj="
+                                class="state-published" title="Sujets transversaux et transdisciplinaires">Sujets transversaux et transdisciplinaires</a>
+                            </div>   
+                        </li>
+                    </ul>
+                </li>
+<!-- *********************Menu Programmes officiels***************** -->
+                <li id="portaltab-4" tal:attributes="class python: 'selected' or 'plain'">
+                <a href="" title="Programmes officiels" class="mainTabContent"
+                   tal:attributes="href string:${context/portal_url}/programmes"> Programmes officiels </a>
+                    <ul class="submenu" id="programmes">
+                        <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/programmes/Prog_College"
+                                class="state-published" title="Programmes de collège">Collège</a>
+                            </div>   
+                        </li>
+                        
+                         <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/programmes/Prog_Seconde"
+                                class="state-published" title="Programmes de seconde">Seconde</a>
+                            </div>   
+                        </li>
+                        
+                         <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/programmes/Prog_Premiere"
+                                class="state-published" title="Programmes de première S">Première S</a>
+                            </div>   
+                        </li>
+                        
+                         <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/programmes/programme-premiere-L"
+                                class="state-published" title="Programmes de première L et ES">Première L et ES</a>
+                            </div>   
+                        </li>
+                        
+                         <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/programmes/Prog_Terminale"
+                                class="state-published" title="Programmes de terminal S">Terminale S</a>
+                            </div>   
+                        </li>
+                        
+                         <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/programmes/programme-premiere-terminale-st2s"
+                                class="state-published" title="Programme de première et terminale ST2S">Première et terminale ST2S</a>
+                            </div>   
+                        </li>
+                        
+                         <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/programmes/sites-experts-dgesco-ens"
+                                class="state-published" title="Ressources des autres sites DGESCO-ENS">Ressources des autres sites DGESCO-ENS</a>
+                            </div>   
+                        </li>
+                        
+                         <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/programmes/rss-des-academies"
+                                class="state-published" title="RSS des académies">RSS des académies</a>
+                            </div>   
+                        </li>
+                    </ul>
+                </li>
+
+<!-- *********************Menu Actulaités***************** -->
+                <li id="portaltab-5" tal:attributes="class python: 'selected' or 'plain'">
+                <a href="" title="Actualités scientifiques" class="mainTabContent"
+                   tal:attributes="href string:${context/portal_url}/actualites"> Actualités scientifiques</a>
+                    <ul class="submenu" id="actualites">
+                        <!--li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/actualites/breves"
+                                class="state-published" title="Brèves">Brèves</a>
+                            </div>   
+                        </li-->
+                        
+                        <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/actualites/evenements"
+                                class="state-published" title="Événements">Événements</a>
+                            </div>   
+                        </li>
+                        
+                       <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/actualites/flux-rss-actualites-dautres-sites"
+                                class="state-published" title="Flux RSS (des actualités d'autres sites)">Flux RSS (des actualités d'autres sites)</a>
+                            </div>   
+                        </li>
+                        
+                        <!--li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/actualites/liens_actualites"
+                                class="state-published" title="Liens vers des actualités<">Liens vers des actualités</a>
+                            </div>   
+                        </li-->
+                        
+                        
+                    </ul>
+                </li>
+<!-- *********************Menu En pratique***************** -->
+                <li id="portaltab-6" tal:attributes="class python: 'selected' or 'plain'">
+                <a href="" title="En pratique" class="mainTabContent"
+                   tal:attributes="href string:${context/portal_url}/en-pratique"> En pratique </a>
+                    <ul class="submenu">
+                        <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/nouveautes_rss"
+                                class="state-published" title="S'abonner au flux RSS du site">S'abonner au flux RSS du site</a>
+                            </div>   
+                        </li>
+                        
+                        <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/qr/"
+                                class="state-published" title="Questions/Réponses">Questions/Réponses</a>
+                            </div>   
+                        </li>
+                        
+                        <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/qr/liens-utiles/"
+                                class="state-published" title="Liens utiles">Liens utiles</a>
+                            </div>   
+                        </li>
+                        
+                        <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/activitesconcours/"
+                                class="state-published" title="Activités et concours">Activités et concours</a>
+                            </div>   
+                        </li>
+                        
+                        <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/information"
+                                class="state-published" title="Information">Information</a>
+                            </div>   
+                        </li>
+                        
+                         <li class="navTreeItem visualNoMarker">
+                            <div>
+                            <a href="" tal:attributes="href string:${context/portal_url}/contactez-nous"
+                                class="state-published" title="Contact">Contact</a>
+                            </div>   
+                        </li>
+                    </ul>
+                </li>
+        </ul>
+        <div class="visualClear" id="post-sections-clear"><!-- --></div>
+    </div>
+</tal:tabs>

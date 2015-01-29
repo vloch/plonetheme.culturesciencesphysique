@@ -1,0 +1,8 @@
+<a id="portal-logo-eduscol" title="EduScol"
+   href="http://eduscol.education.fr/cid45856/sites-experts-ens.html">
+    <img src="logo.jpg" alt="Eduscol"
+         tal:attributes="src string:${view/site_url}/++resource++plonetheme.culturesciencesphysique.images/eduscol.gif" /></a>
+<a id="portal-logo-enslyon" title="ENS Lyon"
+   href="http://www.ens-lyon.fr/">
+    <img src="logo.jpg" alt="ENS Lyon"
+         tal:attributes="src string:${view/site_url}/++resource++plonetheme.culturesciencesphysique.images/ens-lyon.gif" /></a>

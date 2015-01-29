@@ -1,0 +1,24 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser">
+
+    <!-- Define some viewlets -->
+
+    <!-- Colophon -->
+    <browser:viewlet
+        name="plone.colophon"
+        for="*"
+        manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+        template="browser/templates/colophon.pt"
+        permission="zope.Public"
+        />
+
+    <!-- Render the browser title -->
+    <browser:viewlet
+        name="plone.htmlhead.title"
+        manager="plone.app.layout.viewlets.interfaces.IHtmlHead"
+        class=".browser.viewlets.TitleViewlet"
+        permission="zope2.View"
+        />
+
+</configure>

@@ -1,0 +1,1749 @@
+/* Stylesheet for the 'CultureSciencesPhysique' Plone theme */
+
+/* test coloration */
+
+
+body {
+    color: #333333;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+color: #333333;
+
+}
+
+a:link {
+color: #6666cc;
+text-decoration: none;
+}
+
+a:hover, #content a:hover{
+color: #6666cc !important;
+text-decoration: underline;
+
+}
+
+a:visited,  #content a:visited{
+color: #333399 !important;
+text-decoration: none;
+
+}
+/*********Mettre background blanc et definir min-height*******************************************************/
+
+#content{
+    background-color:#FFFFFF;
+    min-height:450px;
+    z-index:10;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding-bottom:15px;
+    padding-left: 20px;
+}
+#content a:link, dl.portlet a:link {
+/*border-bottom:0.1em solid #CCCCCC;*/
+border-bottom: none;
+color: #6666cc;
+}
+
+#content a:visited, dl.portlet a:visited {
+border-bottom: none;
+color: #333399;
+}
+
+#content a:hover, dl.portlet a:hover {
+text-decoration: underline;
+/*color:#6666cc !important;*/
+}
+
+/* Viewlets */
+
+#visual-portal-wrapper {
+border-left: 6px solid #b51f1f;
+min-width: 1050px;
+max-width:100%;
+}
+
+#portal-top {
+background-color: #ffffff;
+}
+
+#portal-logo-enslyon {
+display:inline-block;
+float: right;
+margin:15px 15px 0 0;
+padding: 0;
+
+}
+
+#portal-logo-eduscol {
+display:inline-block;
+float: right;
+margin: 15px 25px 0 0;
+padding: 0;
+
+}
+
+#portal-banner {
+display:inline-block;
+float: left;
+margin:0 0 0 0;
+padding:0 0 0 0;
+
+}
+
+#portal-columns {
+background-color: #ffffff;
+background-image: url(++resource++plonetheme.culturesciencesphysique.images/content_background.jpg);
+background-position: 0 0;
+background-repeat: no-repeat;
+
+}
+
+#portal-personaltools,
+#portal-personaltools dd {
+background-color: #fcefd9;
+}
+
+#portal-footer {
+background-color: #ffffff;
+margin: 0;
+}
+
+/* Dropdown menu modifiaction */
+
+/*********Nettoyer la bordure du menu deroulant du Plone******************/
+#portal-globalnav ul, #portal-globalnav ul li, #portal-globalnav li ul, #portal-globalnav li ul li{
+    border :0;
+}
+
+/*****Espacer des onglets******************/
+#portal-globalnav li#portaltab-1, #portal-globalnav li#portaltab-2, #portal-globalnav li#portaltab-3, #portal-globalnav li#portaltab-4, #portal-globalnav li#portaltab-5 {
+    margin-right:2%;
+}
+/********Definir les bordures des sous-menus************************/
+#portal-globalnav ul.submenu {
+    margin-top:0px;
+}
+
+#portal-globalnav ul.submenu a, #portal-globalnav ul.submenu a:hover{
+    border-left:1px solid;
+    border-bottom:1px solid;
+    border-top:0 none;
+    border-right:1px solid;
+}
+#portal-globalnav ul.submenu {
+    border-top:1px solid;
+}
+
+#portal-globalnav {
+width:100%;
+float:center;
+margin: 9px 0 0 0;
+background:none repeat scroll 0 0 transparent;
+
+}
+
+#portal-globalnav li {
+/*float:left;*/
+margin:0 3em 0 0;
+padding:0;
+}
+
+
+#portal-globalnav li a,
+#portal-globalnav li a:hover,
+#portal-globalnav ul.submenuv li a,
+#portal-globalnav ul.submenu li a:hover {
+    background:none repeat scroll 0 0 #ffffff;
+    min-width:50px;   
+    text-decoration:none;
+    color:#333333 !important;
+}
+#portal-globalnav li a,
+#portal-globalnav li a:hover{
+    min-height:40px;
+    padding: 8px 10px 0px 10px;
+    font-weight:bold;
+    font-size:1.1em;
+}
+
+#portal-globalnav ul.submenu li a,
+#portal-globalnav ul.submenu li a:hover {
+    padding: 2px 2px 1px 2px;
+    min-height:20px;
+    font-weight:normal;
+} 
+
+#portal-globalnav li#portaltab-1 {
+    background: url("++resource++plonetheme.culturesciencesphysique.images/menu-top-orange-gauche.png") no-repeat scroll left top #ffffff;
+    color: #333333;
+    height:40px;
+    padding: 0 2px 0 34px;
+    
+}
+
+#portal-globalnav li#portaltab-1 ul.submenu {
+border-color: #fe7817;
+}
+
+#portal-globalnav li#portaltab-1 a,
+#portal-globalnav li#portaltab-1 a:hover {
+background: url("++resource++plonetheme.culturesciencesphysique.images/menu-top-orange-droit.png") no-repeat scroll right top transparent;
+color: #333333;
+z-index:10;
+
+}
+
+#portal-globalnav li#portaltab-1 ul.submenu a,
+#portal-globalnav li#portaltab-1 ul.submenu a:hover {
+background:none repeat scroll 0 0 #ffffff;
+color: #333333;
+border-color: #fe7817;
+padding: 0.3em;
+min-height:20px;
+}
+
+#portal-globalnav li#portaltab-2 {
+background: url("++resource++plonetheme.culturesciencesphysique.images/menu-top-rouge-gauche.png") no-repeat scroll left top #ffffff;
+color: #333333;
+padding: 0 2px 3px 34px;
+margin:0 2% 0 0;
+
+}
+
+#portal-globalnav li#portaltab-2 ul.submenu {
+border-color: #a14a35;
+margin-top:-13px;
+padding:0;
+}
+
+#portal-globalnav li#portaltab-2 a,
+#portal-globalnav li#portaltab-2 a:hover {
+background: url("++resource++plonetheme.culturesciencesphysique.images/menu-top-rouge-droit.png") no-repeat scroll right top transparent;
+color: #333333;
+
+}
+
+#portal-globalnav li#portaltab-2 ul.submenu a{
+    background:none repeat scroll 0 0 #ffffff;
+    color: #333333;
+    border-color: #b51f1f;
+    padding: 2px 2px -0px 2px;
+    min-height:20px;
+} 
+#portal-globalnav li#portaltab-2 ul.submenu a:hover{
+    background:#FFDFDF;
+min-height:20px;
+}
+
+#portal-globalnav li#portaltab-3 {
+background: url("++resource++plonetheme.culturesciencesphysique.images/menu-top-vert-gauche.png") no-repeat scroll left top #ffffff;
+color: #333333;
+height:40px;
+/*margin: 0 auto;*/
+margin:0 2% 0 0;
+/*float: left;*/
+padding: 0 2px 0 34px;
+}
+
+#portal-globalnav li#portaltab-3 ul.submenu {
+    border-color: #80da19;
+    margin-top:-13px;
+}
+
+#portal-globalnav li#portaltab-3 a,
+#portal-globalnav li#portaltab-3 a:hover {
+background: url("++resource++plonetheme.culturesciencesphysique.images/menu-top-vert-droit.png") no-repeat scroll right top transparent;
+color: #333333;
+}
+
+#portal-globalnav li#portaltab-3 ul.submenu a{
+    background:none repeat scroll 0 0 #ffffff;
+    color: #333333;
+    border-color: #80da19;
+    padding: 0.3em;
+min-height:20px;
+} 
+#portal-globalnav li#portaltab-3 ul.submenu a:hover{
+    background:#EFFBBC;
+min-height:20px;
+}
+
+#portal-globalnav li#portaltab-4 {
+background: url("++resource++plonetheme.culturesciencesphysique.images/menu-top-jaune-gauche.png") no-repeat scroll left top  #ffffff;
+color: #333333;
+height:40px;
+/*margin: 0 auto;*/
+margin:0 2% 0 0;
+/*float: left;*/
+padding: 0 2px 0 34px;
+}
+
+#portal-globalnav li#portaltab-4 ul.submenu {
+border-color: #ffd259;
+margin-top:-13px;
+}
+
+#portal-globalnav li#portaltab-4 a,
+#portal-globalnav li#portaltab-4 a:hover {
+background: url("++resource++plonetheme.culturesciencesphysique.images/menu-top-jaune-droit.png") no-repeat scroll right top transparent;
+color: #333333;
+}
+
+#portal-globalnav li#portaltab-4 ul.submenu a{
+    background:none repeat scroll 0 0 #ffffff;
+    color: #333333;
+    border-color: #ffd259;
+    padding: 0.3em;
+min-height:20px;
+} 
+#portal-globalnav li#portaltab-4 ul.submenu a:hover{
+    background:#FFF2BF;
+min-height:20px;
+}
+
+#portal-globalnav li#portaltab-5 {
+background: url("++resource++plonetheme.culturesciencesphysique.images/menu-top-bleu-gauche.png") no-repeat scroll left top #ffffff;
+color: #333333;
+height:40px;
+/*margin: 0 auto;*/
+margin:0 2% 0 0;
+/*float: left;*/
+padding: 0 2px 0 34px;
+}
+
+#portal-globalnav li#portaltab-5 ul.submenu {
+border-color: #5A95CF;
+margin-top:-13px;
+}
+
+#portal-globalnav li#portaltab-5 a,
+#portal-globalnav li#portaltab-5 a:hover {
+background: url("++resource++plonetheme.culturesciencesphysique.images/menu-top-bleu-droit.png") no-repeat scroll right top transparent;
+color: #333333;
+}
+
+#portal-globalnav li#portaltab-5 ul.submenu a{
+    background:none repeat scroll 0 0 #ffffff;
+    color: #333333;
+    border-color: #5A95CF;
+    padding: 0.3em;
+min-height:20px;
+} 
+#portal-globalnav li#portaltab-5 ul.submenu a:hover{
+    background:#C5E1F9;
+min-height:20px;
+}
+
+#portal-globalnav li#portaltab-6 {
+background: url("++resource++plonetheme.culturesciencesphysique.images/menu-top-violet-gauche.png") no-repeat scroll left top #ffffff;
+color: #333333;
+height:40px;
+margin:0 0 0 0;
+/*margin: 0 auto;*/
+/*float: left;*/
+padding: 0 2px 0 34px;
+}
+
+#portal-globalnav li#portaltab-6 ul.submenu {
+    border-color: #8781BE;
+margin-top:-13px;
+}
+
+#portal-globalnav li#portaltab-6 a,
+#portal-globalnav li#portaltab-6 a:hover {
+background: url("++resource++plonetheme.culturesciencesphysique.images/menu-top-violet-droit.png") no-repeat scroll right top transparent;
+color: #333333;
+}
+
+#portal-globalnav li#portaltab-6 ul.submenu a{
+    background:none repeat scroll 0 0 #ffffff;
+    color: #333333;
+    border-color: #8781BE;
+    padding: 0.3em;
+min-height:20px;
+} 
+#portal-globalnav li#portaltab-6 ul.submenu a:hover{
+    background:#E0DCFF;
+min-height:20px;
+}
+
+
+/* ==================J'ai mis en commentaire des onglets non utilises pour eviter des problemes de marge=================
+#portal-globalnav li#portaltab-7 {
+background: url("++resource++plonetheme.culturesciencesphysique.images/menu-top-turquoise-gauche.png") no-repeat scroll left top #ffffff;
+color: #333333;
+height:40px;
+margin: 0 auto;
+float: left;
+padding: 0 2px 0 34px;
+}
+
+#portal-globalnav li#portaltab-7 ul.submenu {
+border-color: #79a5d1 ;
+margin-top:-13px;
+}
+
+#portal-globalnav li#portaltab-7 a,
+#portal-globalnav li#portaltab-7 a:hover {
+background: url("++resource++plonetheme.culturesciencesphysique.images/menu-top-turquoise-droit.png") no-repeat scroll right top transparent;
+color: #333333;
+}
+
+#portal-globalnav li#portaltab-7 ul.submenu a,
+#portal-globalnav li#portaltab-7 ul.submenu a:hover {
+background: none no-repeat scroll right top #ffffff;
+color: #333333;
+border-color: #79a5d1 ;
+padding: 0.3em;
+min-height:20px;
+}
+
+#portal-globalnav li#portaltab-8 {
+background: url("++resource++plonetheme.culturesciencesphysique.images/menu-top-rose-gauche.png") no-repeat scroll left top #ffffff;
+color: #333333;
+height:40px;
+margin: 0 auto;
+float: left;
+padding: 0 2px 0 34px;
+}
+
+#portal-globalnav li#portaltab-8 ul.submenu {
+border-color: #8479bd ;
+}
+
+#portal-globalnav li#portaltab-8 a,
+#portal-globalnav li#portaltab-8 a:hover {
+background: url("++resource++plonetheme.culturesciencesphysique.images/menu-top-rose-droit.png") no-repeat scroll right top transparent;
+color: #333333;
+}
+
+#portal-globalnav li#portaltab-8 ul.submenu a,
+#portal-globalnav li#portaltab-8 ul.submenu a:hover {
+background: none no-repeat scroll right top #ffffff;
+color: #333333;
+border-color: #8479bd ;
+padding: 0.3em;
+min-height:20px;
+}*/
+/*
+#ressources li{
+ border:1px solid #96353c;
+border-top:0;
+}
+#themes li{
+ border:1px solid #92bc66;
+border-top:0;
+}
+#programmes li{
+ border:1px solid #F0c6a0;
+border-top:0;
+}
+#actualites li{
+ border:1px solid #96353c;
+border-top:0;
+}
+#themes li a{
+ border:none;
+}
+*/
+#viewlet-content-header {
+/*margin-top: -30px;*/
+background: url("++resource++plonetheme.culturesciencesphysique.images/accolade-rouge-top.png") no-repeat scroll 0px 0px transparent;
+height: 30px;
+}
+
+#viewlet-above-content, #viewlet-below-content, #portlets-below {
+/*margin-top: 30px;*/
+    margin:0;
+    background: url("++resource++plonetheme.culturesciencesphysique.images/accolade-rouge-mid.png") repeat-y scroll 0px 0px #ffffff;
+}
+#viewlet-content {
+background: url("++resource++plonetheme.culturesciencesphysique.images/accolade-rouge-mid.png") repeat-y scroll 0px 0px transparent;
+}
+/*#viewlet-below-content {
+/*margin-bottom: 30px;
+background: url("++resource++plonetheme.culturesciencesphysique.images/accolade-rouge-mid.png") repeat-y scroll 0px 0px transparent;
+}
+*/
+#viewlet-content-footer {
+    margin-top: -10px;
+    margin-left:0;
+    background: url("++resource++plonetheme.culturesciencesphysique.images/accolade-rouge-bot.png") no-repeat scroll left transparent;
+    height: 50px;
+    padding:0; 
+}
+
+.managePortletsAboveLink, .managePortletsBelowLink, .manageFooterPortletsLink{
+margin: 0 auto 0;
+}
+
+#viewlet-content #edit-bar,
+#viewlet-content #content {
+margin-left:16px;
+padding-right:0px;
+}
+
+#edit-bar {
+background-color:#b51f1f;
+border:0.25em solid #b51f1f;
+}
+
+#content-views, #contentActionMenus {
+background:none repeat scroll 0 0 #b51f1f;
+}
+#contentActionMenus dl.actionMenu.activated dd {
+border-bottom:0.5em solid #b51f1f;
+}
+#contentActionMenus dl.actionMenu a, #contentActionMenus dl.actionMenu.activated dd {
+background-color:#b51f1f;
+}
+
+#content #collage h1.documentFirstHeading {
+display: none;
+}
+
+#content div.documentActions ul li {
+margin-bottom: 0;
+}
+
+/********Enlever la bordure de l'image***********************/
+/*
+#content dl.portlet a:link img, #content dl.portlet a:visited img {
+border: 1px solid #b51f1f;
+}
+
+#content dl.portlet a:hover img {
+border: 1px dotted #b51f1f;
+} */
+
+#portal-column-one-header, #portal-column-two-header {
+margin-top: -30px;
+background: url("++resource++plonetheme.culturesciencesphysique.images/accolade-orange-top.png") no-repeat scroll 0px 0px transparent;
+height: 30px;
+}
+
+#portal-column-one, #portal-column-two {
+margin-top: 30px;
+margin-bottom: 30px;
+background: url("++resource++plonetheme.culturesciencesphysique.images/accolade-orange-mid.png") repeat-y scroll 0px 0px transparent;
+/*border-left: 3px solid #fe7817;*/
+}
+
+/*#portal-column-one .portletNouveautesDuSite .portletItem div div , 
+#portal-column-two  .portletNouveautesDuSite .portletItem div div{
+    margin-top:5px;
+} */
+#portal-column-one .portletNouveautesDuSite .portletItem div div a, 
+#portal-column-two  .portletNouveautesDuSite .portletItem div div a{
+    font-family: Arial,Helvetica,sans-serif;
+}
+#portal-column-one .portletItem .discreet, 
+#portal-column-two .portletItem .discreet{
+    font-size:90%;
+    color:#666666;
+}
+
+#portal-column-one-footer, #portal-column-two-footer {
+margin-bottom: -30px;
+background: url("++resource++plonetheme.culturesciencesphysique.images/accolade-orange-bot.png") no-repeat scroll 0px 0px transparent;
+height: 30px;
+}
+
+#portlets-below .portletsBelowContentA, #portlets-above .portletsAboveContentB, #portlets-below .portletsAboveContentB, #portlets-below .portletsBelowContentB{
+width:32.5%;
+float:left;
+margin-right:0.5em;
+}
+
+#portlets-above .portletsAboveContentC, #portlets-below .portletsAboveContentC, #portlets-below .portletsBelowContentC{
+width:32.5%;
+float:right;
+}
+dd.portletItem a, .portletSerie dd.portletItem div a,  .portletNouveautesDuSite dd.portletItem div a{
+ text-decoration:none ;
+}
+#portlets-above .portletsAboveContentE, #portlets-below .portletsAboveContentE, #portlets-below .portletsBelowContentE, #portlets-below .portletsBelowContentF, #portlets-below .portletsBelowContentD{
+position:relative;
+clear:both;
+}
+
+#portal-column-one dl.portlet dt,
+#portal-column-one div.portletAssignments div.portletHeader,
+#portal-column-two dl.portlet dt,
+#portal-column-two div.portletAssignments div.portletHeader {
+background:none repeat scroll 0 0 transparent;
+line-height:normal;
+padding:0.42em 1em;
+color: #b51f1f;
+margin-bottom: -10px;
+}
+
+#content dl.portlet dt a:link,
+#content dl.portlet dt a:visited,
+#portal-column-one dl.portlet dt a:link,
+#portal-column-one dl.portlet dt a:visited,
+#portal-column-two dl.portlet dt a:link,
+#portal-column-two dl.portlet dt a:visited {
+    color: #b51f1f !important;
+    text-decoration:none;
+}
+
+
+#content dl.portlet dt a:hover,
+#portal-column-one dl.portlet dt a:hover,
+#portal-column-two dl.portlet dt a:hover {
+color: #b51f1f !important;
+}
+
+#content dl.portlet dd.portletItem {
+    margin-left:0;
+    margin-bottom:-10px;
+
+}
+#portal-column-two dl.portlet dd.portletItem {
+    padding-bottom:10px;
+
+} 
+
+#content dl.portlet dd.portletItem ,
+#content dl.portlet dd.portletItem a:link,
+#content dl.portlet dd.portletItem a:visited,
+#portal-column-one dl.portlet dd.portletItem ,
+#portal-column-one dl.portlet dd.portletItem a:link,
+#portal-column-one dl.portlet dd.portletItem a:visited,
+#portal-column-two dl.portlet dd.portletItem ,
+#portal-column-two dl.portlet dd.portletItem a:link,
+#portal-column-two dl.portlet dd.portletItem a:visited {
+color: #000000 !important;
+}
+
+#content dl.portlet dd.portletItem a:hover,
+#portal-column-one dl.portlet dd.portletItem a:hover,
+#portal-column-two dl.portlet dd.portletItem a:hover {
+color: #000000 !important;
+}
+#portal-column-one dl.portlet dd.portletItem,
+#portal-column-two dl.portlet dd.portletItem{
+    background-color:#FFF;
+}
+
+dl.portlet dd.portletFooter{
+    margin-top:-10px;
+    padding-top:0px;
+}
+
+#content dl.portlet dd.portletFooter,
+#content dl.portlet dd.portletFooter a:link,
+#content dl.portlet dd.portletFooter a:visited{
+    padding-top:0px;
+    padding-bottom:0px;
+    margin-bottom:5px;
+    color: #b51f1f !important;
+}
+#portal-column-one #portlet-topnews dd.portletItem  p.portletImageTitle  a:hover{
+    text-decoration: underline;
+}
+#portal-column-one dl.portlet dd.portletFooter,
+#portal-column-one dl.portlet dd.portletFooter a:link,
+#portal-column-one dl.portlet dd.portletFooter a:visited,
+#portal-column-two dl.portlet dd.portletFooter,
+#portal-column-two dl.portlet dd.portletFooter a:link,
+#portal-column-two dl.portlet dd.portletFooter a:visited{
+    color: #fe7817 !important;
+    padding-top:0px;
+    margin-top:0;
+    padding-bottom:0px;
+    margin-bottom:3px;
+}
+#portal-column-one dl.portlet dd.portletFooter{
+    padding-top:5px;
+    padding-bottom:2px;
+}
+
+#content dl.portlet dd.portletFooter a:hover {
+color: #b51f1f !important;
+}
+
+#portal-column-one dl.portlet dd.portletFooter a:hover,
+#portal-column-two dl.portlet dd.portletFooter a:hover {
+color: #fe7817 !important;
+}
+
+#content dl.portlet dd.portletFooter a,
+#portal-column-one dl.portlet dd.portletFooter a,
+#portal-column-two dl.portlet dd.portletFooter a {
+display: block;
+text-align: right;
+}
+
+#portal-column-one dl.portlet dt.portletHeader span.portletTopLeft,
+#portal-column-two dl.portlet dt.portletHeader span.portletTopLeft {
+display: inline-block;
+background:url("++resource++plonetheme.culturesciencesphysique.images/bouton-orange.png") no-repeat scroll 0 0 transparent;
+width: 29px;
+height: 28px;
+margin: 0px -9px -12.5px -14px;
+border-bottom:none;
+}
+
+#portal-column-one dl.portlet dt.portletHeader span,
+#portal-column-two dl.portlet dt.portletHeader span {
+/*background:none repeat scroll 0 0 #ffffff;
+border-bottom: 3px solid #fe7817;*/
+    background:none repeat scroll 0 0 transparent;
+    margin-left:-5px;
+    margin-right:9px;
+    padding-left:8px;
+    line-height:30px;
+}
+
+#portal-column-one dl.portlet dt.portletHeader span.portletTopRight,
+#portal-column-two dl.portlet dt.portletHeader span.portletTopRight {
+display: inline-block;
+/*background:url("++resource++plonetheme.culturesciencesphysique.images/arrondi_onglet_orange.png") no-repeat scroll 0 0 transparent;*/
+width: 17px;
+height: 30px;
+margin: 0px 0px -21.5px -9px;
+border-bottom:none;
+}
+
+#portal-column-one dl > dd:first-of-type,
+#portal-column-two dl > dd:first-of-type {
+    border-top: 2px solid #fe7817;
+    border-radius: 15px 15px 0 0;
+    -moz-border-radius: 15px 15px 0 0;
+    -webkit-border-radius: 15px 15px 0 0;   
+}
+#portal-column-one dl#portlet-objects-pedagogiques > dd:first-of-type,
+#portal-column-one dl#portlet-objects-medias > dd:first-of-type{
+    padding-top:15px;
+}
+
+#portal-column-one .portletItemDetails dl > dd:first-of-type,
+#portal-column-two .portletItemDetails dl > dd:first-of-type {
+    border-top: 0px solid transparent;
+    border-radius: 15px 15px 0 0;
+    -moz-border-radius: 15px 15px 0 0;
+     
+}
+
+#portal-column-one dd.portletItem,
+#portal-column-two dd.portletItem {
+    background: none no-repeat scroll left top #ffffff;
+    border-left: 2px solid #fe7817;
+    border-right: 2px solid #fe7817;
+    margin: 0 0 0 11px;
+}
+
+#portal-column-one dl > dd:last-of-type,
+#portal-column-two dl > dd:last-of-type {
+    background: none no-repeat scroll left bottom #ffffff;
+    border-left: 2px solid #fe7817;
+    border-right: 2px solid #fe7817;
+    border-bottom: 2px solid #fe7817;
+    margin: 0px 0 0 11px;
+    border-radius: 0 0 15px 15px;
+    -moz-border-radius: 0 0 15px 15px;
+     
+}
+#portal-column-one .portletItemDetails dl > dd:last-of-type,
+#portal-column-two .portletItemDetails dl > dd:last-of-type {
+    background: none no-repeat scroll left bottom #ffffff;
+    border:none;
+    margin: 0;
+    padding:0;
+} 
+
+#portal-column-one dl > dd:only-of-type,
+#portal-column-two dl > dd:only-of-type {
+    border: 2px solid #fe7817;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+     
+}
+/*
+.section-ressources .portletsBelowContentE, .section-ressources.portletNouveautesDuSite{
+    margin-left:1.1em;
+    padding-bottom:1em;
+    /*margin-bottom:2em;*/
+}
+.section-ressources .portletsBelowContentE dl.portlet dt.portletHeader a:link, 
+.section-ressources .portletsBelowContentE dl.portlet dt.portletHeader a:hover,
+.section-ressources .portletsBelowContentE dl.portlet dt.portletHeader a:visited{
+    color:#B51F1F !important;
+    font-size:1.2em;
+    text-decoration:none;
+}
+
+.section-ressources .portletsBelowContentE dl.portlet dd a:link,
+.section-ressources .portletsBelowContentE dl.portlet dd a:hover,
+.section-ressources .portletsBelowContentE dl.portlet dd a:visited{
+    color:#333 !important;
+    float:right;
+    clear:right
+}
+.section-ressources .portletsBelowContentE dl.portlet dd a:hover{
+    text-decoration:underline;
+}
+#collage div.collage-item dl.portlet{
+    background: none no-repeat scroll left top transparent;
+    border: 2px solid #b51f1f;
+    border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    font-size: 12.8px;
+    min-height:100px;
+    z-index:5;
+    
+}
+
+/*******Aligner les lignes avec la bordure de gauche***************/
+#collage div.row_1{
+   margin-left:-14px; 
+}
+#collage div.row_2 {
+margin-top:0px;
+}
+#collage div.row_2 {
+   margin-left:-20px; 
+   max-height:300px;
+   margin-top:2em;
+}
+#collage div.row_3{
+   margin-left:-14px; 
+   margin-top:4em;
+}
+#collage div.row_2  dl#portlet-hasard{
+    max-height:270px;
+}
+
+.section-ressources-scientifiques-pour-lenseignement #collage div.row_2,
+.section-ressources-scientifiques-pour-lenseignement #collage div.row_3{
+    margin-left:-20px; 
+    margin-top:2em;
+}
+
+dl#portlet-hasard dd{
+    text-align:center;
+}
+
+
+#collage dl.portlet img{
+    max-height:110px;
+}
+#collage div.collage-first-object, #collage div.collage-first-object div.collage-item {
+margin-left: -1px;
+}
+
+#collage div.collage-item dl.portlet dt,
+#collage div.collage-item div.portletAssignments div.portletHeader , 
+.section-ressources .portletsBelowContentE dl.portlet dt,.section-ressources .portletsBelowContentE div.portletAssignments div.portletHeader{
+    background:none repeat scroll 0 0 transparent;
+    line-height:normal;
+    padding:0.42em 1em;
+    color: #b51f1f;
+    margin-bottom: -10px;
+}
+
+#collage div.collage-item dl.portlet dt.portletHeader ,
+.section-ressources .portletsBelowContentE dl.portlet dt.portletHeader{
+    margin-top: -25px;
+    margin-left: -11px;
+}
+
+
+.section-ressources .portletsBelowContentE dl.portlet dt.portletHeader span.portletTopLeft
+{
+display: inline-block;
+background:url("++resource++plonetheme.culturesciencesphysique.images/bouton-rouge.png") no-repeat scroll left transparent;
+width: 30px;
+height: 30px;
+margin: 0px -15px -15px -15px;
+padding-left:1.5em;
+border-bottom:none;
+}
+
+#collage div.collage-item dl.portlet dt.portletHeader span.portletTopLeft
+{
+display: inline-block;
+background:url("++resource++plonetheme.culturesciencesphysique.images/bouton-rouge.png") no-repeat scroll left transparent;
+width: 30px;
+height: 30px;
+margin: -7px -15px -13px -20px;
+padding-left:1.5em;
+border-bottom:none;
+
+}
+#collage div.collage-item dl.portlet dt.portletHeader span.portletTopLeft > span,
+.section-ressources .portletsBelowContentE dl.portlet dt.portletHeader span > span{
+    /*background:none repeat scroll 0 0 transparent;*/
+    /*border-bottom: 1px solid #b51f1f;*/
+    margin-left:5px;
+    margin-right:5px;
+    padding-left:5px;
+    margin-bottom:1em;
+}
+
+
+/******Enlever les accolades************************/
+#collage div.collage-column div.block_2 {
+    margin-top: -30px;
+    /*background: url("++resource++plonetheme.culturesciencesphysique.images/accolade-rouge-top.png") no-repeat scroll 0px 0px transparent; */
+    /*height: 30px; */
+}
+
+#collage div.collage-column div.block_2 div.collage-item dl.portlet,
+.section-ressources .portletsBelowContentE div.collage-item dl.portlet  {
+    margin-left: 7px;
+    margin-top: 30px; 
+}
+
+dl.portletNews span.portletItemDetails,
+dl.portletEvents span.portletItemDetails {
+    display: inline;
+    color:#666666;
+    text-align: right;
+}
+dl.portletNews span.portletItemDetails:before,
+dl.portletEvents span.portletItemDetails:before  {
+    content:'- '; margin-left:-1em;
+    
+}
+
+#portal-column-two dl.portletSearch {
+    background: url("++resource++plonetheme.culturesciencesphysique.images/search_portlet.gif") no-repeat scroll right bottom #1e7485;
+    margin-left: 13px;
+    border: 2px solid #1e7485;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+     
+}
+
+dl.portlet dt a:link, dl.portlet dt a:visited, dl.portlet dt a:hover {
+display: inline-block;
+}
+
+dl.portlet dd.portletItem, dl.portlet dd.portletFooter, dl.portletError dd {
+padding: 1.5em 1em 0em 1em;
+}
+
+dl.portletSearch {
+margin-left: 11px;
+}
+
+#portal-column-two dl.portletSearch dt.portletHeader span.portletTopLeft,
+#portal-column-two dl.portletSearch dt.portletHeader span.portletTopRight {
+display: none;
+}
+
+#portal-column-two dl.portletSearch dt.portletHeader span {
+background: none no-repeat scroll left top transparent;
+border-bottom: none;
+}
+
+
+#portal-column-two dl.portletSearch dt,
+#portal-column-two dl.portletSearch dt.portletHeader a:link,
+#portal-column-two dl.portletSearch dt.portletHeader a:hover,
+#portal-column-two dl.portletSearch dt.portletHeader a:visited {
+color: #000000 !important;
+}
+
+#portal-column-two dl.portletSearch dd.portletItem {
+padding: 0 0 1em 1em;
+margin:0;
+}
+
+#portal-column-two dl.portletSearch > dd:first-of-type,
+#portal-column-two dl.portletSearch > dd:last-of-type,
+#portal-column-two dl.portletSearch > dd:only-of-type {
+    background:none no-repeat scroll left top transparent;
+    border:none;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    
+}
+/**Amelioration de la presentation du moteur de recherche*/
+#searchGadget, .LSBox input.searchField {
+    margin-top:15px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border: 1px solid #FE7817;
+    font-size: 0.89em;
+    padding: 0.3em;
+    width: 60%;
+    
+}
+
+#searchGadget, .LSBox input.searchButton {
+    background: url("++resource++plonetheme.culturesciencesphysique.images/search-button.png") no-repeat scroll left bottom transparent;
+    width: 32px;
+    height: 24px;
+    border-style:none;
+    color: transparent;
+    
+}
+
+/***Mettre le pointeur sur le bouton de la validation de la recherche rapide au survol***********/
+#searchGadget, .LSBox input.searchButton:hover {
+    cursor:pointer;
+}
+
+
+.searchChoiceBox input.radio {
+background: url("++resource++plonetheme.culturesciencesphysique.images/search-button.png") no-repeat scroll left top #fe7817;
+width: 32px;
+height: 24px;
+display: block;
+clear: left;
+/*float: left; */
+/*border: 3px solid #fe7817;*/
+}
+
+.searchChoiceBox label {
+color: #ffffff;
+line-height: 20px ;
+padding: 0 0 0 0.5em;
+}
+dl.portletRessources ul,
+dl.portletStaticText ul{
+    list-style-position:inside;
+}
+
+
+dl.portletRessources ul,
+dl.portletStaticText li {
+    list-style-image:url("++resource++plonetheme.culturesciencesphysique.images/puce-orange-vide.png");
+    /*list-style-position:inside;*/
+    /*list-style: none inside url("++resource++plonetheme.culturesciencesphysique.images/puce-orange-vide.png");*/
+    
+}
+
+dl.portletRessources ul,
+dl.portletStaticText li  a{
+    color:#333;
+}
+/*div.managePortletsLink {
+margin-bottom: 0px;
+margin-left: 11px;
+background:none repeat scroll 0 0 #fe7817;
+
+}*/
+
+a.managePortletsFallback {
+background:none repeat scroll 0 0 #b51f1f;
+}
+
+a.managePortletsFallback:link, a.managePortletsFallback:hover, a.managePortletsFallback:visited {
+color: #ffffff;
+}
+
+#portlet-classification .portletItemDetails {
+margin: 0.5em 0 0 5em;
+}
+
+#portlet-classification .portletItemDetails a {
+font-weight: bold;
+font-size: 12px;
+}
+
+#portlet-classification dd.portletItem .portletItemDetails dl dd a:link,
+#portlet-classification dd.portletItem .portletItemDetails dl dd a:visited {
+    color: #333;
+    font-weight:normal;
+}
+dl#portlet-classification.portlet, dl#portlet-classification dl, 
+dl#portlet-classification dl dd:last-of-type, 
+dl#portlet-classification  dd:last-of-type{
+    padding-bottom:20px;
+}
+
+dl#portlet-classification  dd{
+    margin-bottom:5px;
+}
+dl#portlet-classification  dd.portletItem .portletItemDetails dl,
+#portlet-classification dd.portletItem .portletItemDetails dl dd :last-of-type{
+    padding-bottom:0px;
+    margin-bottom:0;
+}
+#portal-column-two dl#portlet-classification dd.portletItem {
+    padding-bottom:0px;
+} 
+#portal-column-two dl#portlet-classification dd.portletItem:last-of-type {
+    padding-bottom:20px;
+} 
+#content{
+    margin: 0 0 0 0;
+    padding: 0 1em 0 1em;
+    border-top: 2px  solid #b51f1f;
+    border-bottom: 2px  solid #b51f1f;
+    border-left: 0px  solid #b51f1f;
+    border-right: 2px  solid #b51f1f;
+    width:100%;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    border-radius:15px;
+    
+}
+.section-ressources-scientifiques-pour-lenseignement #content{
+    padding-left:1.5em;
+    border-top: 0px  solid #b51f1f;
+    border-bottom: 0px  solid #b51f1f;
+    border-left: 0px  solid #b51f1f;
+    border-right: 0px  solid #b51f1f;
+}
+#content #search-exist, #content #article-xml{
+    margin: 0 0 0 -22px;
+    padding: 1em 2em;
+}
+#search-exist dl{
+    clear:both;
+}
+
+#search-exist #content-title .titleLeft {
+    /*display: inline-block;*/
+    background:url("++resource++plonetheme.culturesciencesphysique.images/bouton-rouge.png") no-repeat scroll left transparent;
+    width: 30px;
+    height: 30px;
+    margin: 0px 0 0px 0;
+    border-bottom:none;
+    z-index:1000;
+}
+
+
+/****Resoudre le probleme du titre long*******************************/
+#article-xml .titlepage div div {
+   /* background:url("++resource++plonetheme.culturesciencesphysique.images/bouton-rouge.png") no-repeat scroll 0 0 transparent;*/
+    padding: 0 0 0 29px;
+    margin-top:0px;
+}
+.template-XML #viewlet-content-header {
+    /*background: url("++resource++plonetheme.culturesciencesphysique.images/bouton-rouge.png") no-repeat scroll left transparent; */
+    margin:0 0 -4px 0;
+    padding:0 0 -1px 0;
+    /*height: 30px; */
+
+}
+#article-xml div.article p{
+    text-align:justify;
+}
+#article-xml div.article div.titlepage div div h2{
+    z-index:5;
+    /*background:transparent url("++resource++plonetheme.culturesciencesphysique.images/accolade-rouge-top.png") no-repeat scroll 0 0; */
+    margin:-10px 0 0 -29px; 
+    padding: 10px 0px 0 0px;
+    color: #b51f1f;
+    font-size: 18px;
+}
+#article-xml div.article h3.subtitle{
+    margin-left:-29px;
+    margin-top:0px;
+}
+#article-xml div.article div.sect1 div.titlepage h2,
+#article-xml div.article div.sect1 div.sect2 div.titlepage h2 {
+    /*margin: 0;*/
+    margin: 0px 0 0 -29px;
+    border: 0px solid #b51f1f;
+    font-size: 14x;
+    background:#fff;
+    padding:0px;
+}
+
+#article-xml div.article div.sect1 div.sect2 div.titlepage h2  span.link-external a,
+#article-xml div.article div.sect1 div.sect2 div.titlepage h2  span.link-external a:hover,
+#article-xml div.article div.sect1 div.sect2 div.titlepage h2  span.link-external a:visited,
+#article-xml div.article div.sect1 div.titlepage h2  span.link-external a,
+#article-xml div.article div.sect1 div.titlepage h2  span.link-external a:hover,
+#article-xml div.article div.sect1 div.titlepage h2  span.link-external a:visited{
+    color: #b51f1f!important;
+    background-image:none;
+    text-decoration:none;
+    margin-top:0px;
+    margin-left:-15px;
+}
+
+ 
+/*#article-xml .titlepage .abstract, */
+#article-xml .titlepage .legalnotice {
+    margin-top:10px;
+    font-size:11px;
+}
+#article-xml h2, #article-xml h3, #article-xml h4,
+#article-xml .titlepage .abstract .title,
+#article-xml .toc p {
+    color: #b51f1f;
+    }
+#article-xml h2{
+    font-size: 15px;
+    font-weight:bold;
+}
+/*#article-xml h3{
+    font-size: 14px;
+}
+#article-xml 4, 
+#article-xml .titlepage .abstract .title,
+#article-xml .toc p {
+    font-size: 13px;
+} */
+
+#article-xml div.pubdate{
+    margin-bottom:0;
+    font-size:12px;
+    margin-top:0px;
+}
+#article-xml  div.author h3.author{
+    font-size:14px;
+    font-weight:bold;
+    /*margin-top:0; */
+}
+/*#article-xml  div.author {
+    float:left;
+  clear:both;
+}*/
+/*#article-xml  div.editor{
+    position:absolute;
+    top:4em; 
+    float:right;
+}
+#article-xml  div.editor:after{
+    content:", ";
+}*/
+
+
+#article-xml  div.editor h3.editor{
+    display:inline;
+    color:#666666;  
+    /*margin-top: -3em;*/
+    font-size:12px;
+}
+#article-xml  div.editor h4.editedby,
+#article-xml  div.editor h3.editor{
+    /*margin-left:65px;*/
+    font-weight:bold;
+    right:1em;
+}
+
+#article-xml  div.editor h4:last-of-type{
+    display:none;
+}
+
+#article-xml  div.editor .affiliation{
+    display:none;
+}
+#article-xml  div.author .affiliation{
+    margin-left:0px; padding:0;
+    font-size:11px;
+}
+#article-xml .titlepage div div div{
+    background-image: none;
+    background-color: #ffffff;
+    padding: 0 0 0 0;
+    margin: 0 0 0 -29px;
+}
+/*#article-xml .titlepage div div p.pubdate {
+    margin-top: 10px;
+    margin-bottom: 10px;
+} */
+
+#article-xml .titlepage div div div.authorgroup {
+margin: 10px 0 -10px 0;
+}
+/*
+#article-xml .titlepage div div div.authorgroup div.editor {
+margin: 0 0 1em 0;
+} */
+
+#article-xml .titlepage hr {
+   color:#B51F1F;
+   width:50%;
+}
+
+#article-xml .toc {
+margin: 2em 0;
+}
+
+#article-xml .toc dt {
+margin: 0 0 0 1em;
+}
+
+#article-xml .toc dl dd {
+display: none;
+}
+#content h1,
+#content #search-exist #content-title h1.documentFirstHeading ,
+#content h1 search_exist_form{
+    display: inline-block;
+    margin: 0 0 1em -0.5em;
+    padding: 0.5em 0.5em 0 0.5em;
+    color: #b51f1f;
+    font-size: 20px;   
+}
+
+.template-search_exist_form #content fieldset{
+    border-color:#b51f1f;
+    padding-top:10px;
+}
+
+#content #search-exist #content-title{
+    margin-bottom:-20px;;
+
+}
+#content #search-exist h1.documentFirstHeading{
+   padding-top:0em;
+   font-size:20px;
+}
+
+
+
+#search-exist .criteresSearch {
+    float: right;
+    clear:right;
+    max-width: 50%;
+    border-top: 1px  solid #b51f1f;
+    border-bottom: 1px  solid #b51f1f;
+    border-left: 1px  solid #b51f1f;
+    border-right: 1px  solid #b51f1f;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    padding: 0.6em 0.6em;
+    margin: 0 0 1em 0.7em;
+    
+}
+#search-exist .criteresSearch h4{
+    font-size:14px;
+}
+#search-exist .criteresSearch ul {
+list-style-type: none;
+margin-left: 0;
+font-size:11px;
+}
+
+#search-exist .criteresSearch ul li span span {
+white-space: nowrap;
+}
+#search-exist h1{
+    color:#b51f1f;
+}
+/*****Repositionner*****************/
+#advanced-search-link{
+margin-top: 30px;
+}
+#search-exist .resultNumber, #advanced-search-link {
+max-width: 50%;
+}
+
+
+#search-exist .listingBar, #search-exist .listeResults, .listingBar , #content div.listingBar{
+/*float: left;*/
+    clear: both;
+}
+
+#search-exist div.listingBar, 
+#content div.listingBar,
+div.listingBar {
+    width: 100%;
+    border-top: 2px solid #b51f1f;
+    border-bottom: 2px solid #b51f1f;
+    text-align: center;
+}
+
+#content div.listingBar .previous , div.listingBar .previous {
+float: left;
+clear:left;
+}
+
+#search-exist div.listingBar a, #search-exist div.listingBar span,
+#content div.listingBar a, #content div.listingBar span,
+div.listingBar a, div.listingBar span{
+    border: 0px;
+    font-weight: bold;
+    color: #b51f1f !important;
+}
+
+#search-exist div.listingBar a,
+#content div.listingBar a, div.listingBar a {
+    font-size: 12px;
+}
+search-exist div.listingBar .current,
+#content div.listingBar .current, 
+div.listingBar .current{
+    font-size: 15px;
+  /*  border:1px solid #b51f1f;
+    padding:1px 2px;
+    background-color:#b51f1f;
+    color:#fff !important;
+    padding:4px 3px 4px 4px; margin:0; */
+    text-decoration:underline;
+}
+
+#search-exist div.listingBar span,
+#content div.listingBar span, div.listingBar span{
+    font-size: 12px;
+}
+
+#search-exist div.listingBar .previous a, 
+#content div.listingBar .next a, div.listingBar .next a,
+#content div.listingBar .previous a, div.listingBar .previous a {
+    font-weight: normal;
+    font-size: 12px;
+    color: #b51f1f !important;
+}
+#search-exist div.listingBar a:hover,
+#content div.listingBar a:hover, div.listingBar a:hover,
+div.listingBar .previous a:hover, #content div.listingBar .previous a:hover,
+div.listingBar .next a:hover, #content div.listingBar .next a:hover {
+    background-color: #b51f1f;
+    color: #ffffff !important;
+}
+#article-xml h2 {
+color: #b51f1f;
+}
+
+div.resourceKeywords {
+    clear:both;
+    float: right;
+    clear: right;
+    margin: 1em 0.3em 0 1em;
+    padding: 1em 2em;
+    max-width: 35%;
+    border-top: 1px  solid #b51f1f;
+    border-bottom: 1px  solid #b51f1f;
+    border-left: 1px  solid #b51f1f;
+    border-right: 1px  solid #b51f1f;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    behavior: url('PIE.htc');
+}
+
+
+/*Pour enlever l'habillage du portlet information*/
+.template-information{
+border:none;
+}
+.template-information .portletNews .portletHeader{
+background:#fff;
+border:none;
+font-weight:bold;
+font-size:1.2em;
+}
+.template-information .portletNews .portletItem, .template-information .portletNews{
+border:none;
+}
+
+.figure {
+padding: 1em;
+}
+
+dl.portalMessage {
+margin:1em 0 1em 20px;
+}
+
+form img {
+vertical-align: baseline;
+}
+
+/******Centrer le footer**************/
+#portal-footer{
+    text-align:center;
+}
+#portal-footer a:hover{
+    text-decoration:underline;
+}
+/***********Couleur bordeaux au titre de la page d'accueil*****************************/
+.standard-document h2{
+    color: #B51F1F;
+}
+
+
+/********Cacher les possibilites d'ajouter des portlets centraux**********************/
+.template-XML p.managePortletsAboveLink, .template-XML p.managePortletsBelowLink{
+   display:none; 
+}
+
+/********Aerer le fil d'ariane************************/
+#portal-breadcrumbs{
+    margin-top:2px;
+    margin-bottom:20px;
+}
+.template-XML #portal-breadcrumbs, .template-XMLld #portal-breadcrumbs{
+    margin-bottom:30px;
+}
+#content dl.portlet dt a:link, #content dl.portlet dt a:visited, #portal-column-one dl.portlet dt a:link, #portal-column-one dl.portlet dt a:visited, #portal-column-two dl.portlet dt a:link, #portal-column-two dl.portlet dt a:visited {
+    color: #B51F1F;
+}
+
+#content dl.portlet dd.portletItem .portletImageTitle, #content dl.portlet dd.portletItem .portletImageTitle a, #content dl.portlet dd.portletItem .portletImageTitle a:hover, #content dl.portlet dd.portletItem .portletImageTitle a:visited{
+color: #B51F1F;
+}
+.collage_item_1 .standard-document p a.internal-link, .collage_item_1 .standard-document p a.internal-link:visited{
+color: #B51F1F;
+} 
+
+/*******Personnaliser des styles de plone******************/
+#content h1.documentFirstHeading, #content h2, .template-page_defaut h1{
+color:#B51F1F;
+}
+#content .documentDescription, #content #description , .template-page_defaut #content div.documentDescription, .template-page_defaut #content #description {
+    margin-top:1%;margin-bottom:1%;
+    color: #666666;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: 0;
+    font-size:1em;
+}
+.actionMenuContent{
+    z-index:100;
+}
+
+.template-plone_control_panel #content, .template-dashboard #content, .template-manage-dashboard #content{
+    padding-left:2em;
+    margin-left:0px;
+    background: url("++resource++plonetheme.culturesciencesphysique.images/accolade-rouge-mid.png") repeat-y scroll #FFF;
+}
+.template-page_defaut #content{
+    margin-top:-13px;;
+}
+
+#edit-bar, #content ul.formTabs{
+    margin-bottom:0;
+ }
+dl.portalMessage dd{
+    border: 1px solid #999966;
+    padding:0.6em;
+}
+dl.portalMessage {
+    width:98%;
+    padding-left:2em;
+    margin:0;
+    background: url("++resource++plonetheme.culturesciencesphysique.images/accolade-rouge-mid.png") repeat-y scroll #fff;
+    border:none;
+}
+.template-manage-portlets  .portlets-manager{
+    padding-left:2em;
+}
+.template-manage-portlets  #portal-column-one .portlets-manager{
+   background:#FFFFFF;
+   margin-left:1em;
+}
+
+/*#content  {
+    margin: 0 0 0 -22px;
+    padding: 0 1em;
+    border-top: 2px  solid #b51f1f;
+    border-bottom: 2px  solid #b51f1f;
+    border-right: 3px  solid #b51f1f;
+    -moz-border-radius:8px;
+    border-radius:8px;
+}
+*/
+/* Opera */ @media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0)
+{
+    dl.portletStaticText ul{
+        margin-left:15px;
+    }
+    #search-exist h1.documentFirstHeading {
+        float:left;
+        clear:left;     
+        margin-left:-13px;
+        padding-top:0;
+        position:absolute;
+    }
+    .section-par_theme #search-exist h1.documentFirstHeading {
+        position:relative;
+        clear:left;
+        margin-right:65%;
+        margin-bottom:2%;
+     }
+    #article-xml div.article div.titlepage div div h2{
+        margin:-10px 0 0 -30px;
+}
+}
+
+/*****Page Actualites d'autres sites********************************************/
+/*.section-actualites  #content  span.link-external a{
+background-image:none;
+}*/
+
+.section-actualites div.collage-row, .section-programmes div.collage-row{
+    margin-top:2em;
+}
+.section-actualites  #content .portletHeader,
+.section-programmes  #content .portletHeader{
+margin-bottom:1em;
+}
+.section-actualites  #content .portletHeader span.link-external a,
+.section-programmes  #content .portletHeader span.link-external a{
+    background-image:none;
+}
+.section-actualites .portletRss .portletItemDetails,
+.section-programmes .portletRss .portletItemDetails{
+    display:inline;
+}
+.section-actualites #content dd,
+.section-programmes #content dd{
+margin-top:10px;
+margin-left:5px;
+padding:0.5em;
+}
+.section-actualites  #content .portletRss dd.portletFooter,
+.section-programmes  #content .portletRss dd.portletFooter{
+    visibility:hidden;
+}
+.section-actualites .row_1,
+.section-programmes .row_1{
+    margin-left:-12px;
+}
+.section-actualites .row_1 .portletRss,
+.section-programmes.row_1 .portletRss{
+    max-height:600px;
+}
+.section-actualites .row_2 .two-columns-equal,
+.section-programmes .row_2 .two-columns-equal{
+    margin-top:3em;
+    margin-left:6px;
+}
+.section-actualites #content,
+.section-programmes #content{
+    border:none;
+}
+.section-actualites #viewlet-content,
+.section-programmes #viewlet-content{
+    margin-top:-5px;
+}
+.section-actualites #collage div.collage-item dl.portlet dt.portletHeader span.portletTopLeft,
+.section-programmes #collage div.collage-item dl.portlet dt.portletHeader span.portletTopLeft
+{
+display: inline-block;
+background:url("++resource++plonetheme.culturesciencesphysique.images/bouton-rouge.png") no-repeat scroll left transparent;
+/*width: 30px;
+height: 30px;*/
+/*margin: -7px -10px -13px -20px;*/
+margin: -15px 0px -11px -18px;
+padding-left:0em;
+border-bottom:none;
+
+}
+
+#login-form{
+    margin-top:40px;
+    margin-left:auto;
+    margin-right:auto;
+}
+/*****Boite de configuration****************/
+#portal-personaltools{
+    z-index:1000;
+}
+#portal-personaltools a{
+    color:#333333 !important;
+    }
+#portal-personaltools a:hover, #portal-personaltools .activated{
+    color:#fff !important;
+    background:#205C90;
+}
+div.managePortletsLink {
+    background: none repeat scroll 0 0 #eee;
+    margin-left: 15px;   
+}
+dl.portletNews dd.portletItem{
+    padding-top:5px;
+}
+dl.portletNews dd.portletItem:first-of-type{
+    padding-top:20px;
+}
+
+dl.portletCumulusPortlet{
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+}
+#portal-column-two dl.portletCumulusPortlet> dd,
+dl.portletCumulusPortlet dd{
+    padding-bottom:0px;margin-bottom:0px;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border: 2px solid #fe7817;
+}
+
+dl.portletCumulusPortlet .portletFooter{
+    display:none;
+}
+#content #portlet-hasard dd.portletItem .portletImageTitle a,
+#content l#portlet-hasard dd.portletItem .portletImageTitle a:hover, 
+#content #portlet-hasard dd.portletItem .portletImageTitle a:visited {
+   color: #b51f1f !important;
+   
+}
+#content dl#portlet-hasard dd.portletItem .portletImageTitle a:hover,
+#content dl#portlet-hasard dd.portletItem p:hover,
+#content dl#portlet-hasard dd.portletItem .portletImageTitle:hover,
+#content dl#portlet-topnews dd.portletItem a p:hover{
+    text-decoration:underline;
+}
+
+/*Modifier la couleur d'un objet selected et ajouter le meme comportement pour le portlet type media*/
+#portlet-objects-pedagogiques a.plain{
+ font-weight:normal;
+
+}
+#portal-column-one #portlet-objects-pedagogiques dd.portletItem a.selected, 
+#portal-column-one #portlet-objects-medias dd.portletItem a.selected,
+#portal-column-two #portlet-objects-pedagogiques dd.portletItem a.selected, 
+#portal-column-two #portlet-objects-medias dd.portletItem a.selected{
+ font-weight:bold;
+ color:#b51f1f !important;
+
+}
+#portlet-objects-pedagogiques dd.portletItem,
+#portlet-objects-medias dd.portletItem{
+    padding:0 15px;;
+}
+
+#portal-column-one #portlet-objects-pedagogiques dd.portletItem,
+#portal-column-one #portlet-objects-medias dd.portletItem{
+    padding:5px 15px;
+}
+#portal-column-one dl#portlet-objects-pedagogiques > dd:first-of-type,
+#portal-column-one dl#portlet-objects-medias > dd:first-of-type,
+#portal-column-two dl#portlet-objects-pedagogiques > dd:first-of-type,
+#portal-column-two dl#portlet-objects-medias > dd:first-of-type{
+    padding-top:15px;
+}
+#portal-column-one dl#portlet-objects-pedagogiques > dd:last-of-type,
+#portal-column-one dl#portlet-objects-medias > dd:last-of-type,
+#portal-column-two dl#portlet-objects-pedagogiques > dd:last-of-type,
+#portal-column-two dl#portlet-objects-medias > dd:last-of-type,
+#portal-column-one dl#portlet-mostView > dd:last-of-type,
+#portal-column-two dl#portlet-mostView > dd:last-of-type{
+    padding-bottom:15px;
+}
+#portlet-mostView  dd.portletItem a{
+    font-size:14px;
+}
+div.position-3\:4 {
+    margin-left: -21.875%;
+}
+div.width-1\:4 {
+    width: 20.75%;
+}
+#portal-column-one .portletStaticText p a:link,
+#portal-column-one .portletStaticText p a:visited{
+    /*color:#fe7817 !important;  ceci ne marche pas*/
+    text-decoration:underline;
+}
+#portal-column-one .portletStaticText p a:hover{
+    text-decoration:none;
+}
+/*
+#content .two-columns-equal {
+margin-bottom:2em;} */
+
+.section-les-ressources-les-plus-vues  #portlet-mostView .portletHeader{
+    display:none;
+
+}
+.section-les-ressources-les-plus-vues  #collage div.collage-item dl.portlet{
+    border:none;
+}

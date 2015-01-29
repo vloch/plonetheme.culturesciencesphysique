@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<object name="portal_actions" xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+ <object name="portal_tabs" meta_type="CMF Action Category">
+  <property name="title"></property>
+  <object name="1" meta_type="CMF Action" i18n:domain="plone">
+   <property name="title" i18n:translate="">Home</property>
+   <property name="description" i18n:translate=""></property>
+   <property
+      name="url_expr">string:${globals_view/navigationRootUrl}</property>
+   <property name="link_target"></property>
+   <property name="icon_expr"></property>
+   <property name="available_expr"></property>
+   <property name="permissions">
+    <element value="View"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+  <object name="2" meta_type="CMF Action">
+   <property name="title">Ressources</property>
+   <property name="description"></property>
+   <property
+      name="url_expr">string:${globals_view/navigationRootUrl}/ressources</property>
+   <property name="link_target"></property>
+   <property name="icon_expr"></property>
+   <property name="available_expr"></property>
+   <property name="permissions"/>
+   <property name="visible">True</property>
+  </object>
+  <object name="3" meta_type="CMF Action">
+   <property name="title">Thèmes scientifiques</property>
+   <property name="description"></property>
+   <property
+      name="url_expr">string:${globals_view/navigationRootUrl}/res-theme</property>
+   <property name="link_target"></property>
+   <property name="icon_expr"></property>
+   <property name="available_expr"></property>
+   <property name="permissions"/>
+   <property name="visible">True</property>
+  </object>
+  <object name="4" meta_type="CMF Action">
+   <property name="title">Programmes officiels</property>
+   <property name="description"></property>
+   <property
+      name="url_expr">string:${globals_view/navigationRootUrl}/programmes</property>
+   <property name="link_target"></property>
+   <property name="icon_expr"></property>
+   <property name="available_expr"></property>
+   <property name="permissions">
+    <element value="View"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+  <object name="5" meta_type="CMF Action">
+   <property name="title">Actualités scientifiques</property>
+   <property name="description"></property>
+   <property
+      name="url_expr">string:${globals_view/navigationRootUrl}/actualites</property>
+   <property name="link_target"></property>
+   <property name="icon_expr"></property>
+   <property name="available_expr"></property>
+   <property name="permissions"/>
+   <property name="visible">True</property>
+  </object>
+  <object name="6" meta_type="CMF Action">
+   <property name="title">En pratique</property>
+   <property name="description"></property>
+   <property
+      name="url_expr">string:${globals_view/navigationRootUrl}/en-pratique</property>
+   <property name="link_target"></property>
+   <property name="icon_expr"></property>
+   <property name="available_expr"></property>
+   <property name="permissions"/>
+   <property name="visible">True</property>
+  </object>
+  <object name="7" meta_type="CMF Action">
+   <property name="title">Dossiers thématiques</property>
+   <property name="description"></property>
+   <property
+      name="url_expr">string:${globals_view/navigationRootUrl}/dossiersthematiques</property>
+   <property name="link_target"></property>
+   <property name="icon_expr"></property>
+   <property name="available_expr"></property>
+   <property name="permissions">
+    <element value="View"/>
+   </property>
+   <property name="visible">False</property>
+  </object>
+ </object>
+ <object name="user" meta_type="CMF Action Category">
+  <object name="dashboard" meta_type="CMF Action" i18n:domain="plone">
+   <property name="visible">True</property>
+  </object>
+  <object name="preferences" meta_type="CMF Action" i18n:domain="plone">
+   <property name="visible">True</property>
+  </object>
+  <object name="plone_setup" meta_type="CMF Action" i18n:domain="plone">
+   <property name="visible">True</property>
+  </object>
+  <object name="login" meta_type="CMF Action" i18n:domain="plone">
+   <property name="visible">True</property>
+  </object>
+  <object name="join" meta_type="CMF Action" i18n:domain="plone">
+   <property name="visible">False</property>
+  </object>
+  <object name="undo" meta_type="CMF Action" i18n:domain="plone">
+   <property name="visible">True</property>
+  </object>
+  <object name="logout" meta_type="CMF Action" i18n:domain="plone">
+   <property name="visible">True</property>
+  </object>
+  <object name="addFavorite" meta_type="CMF Action" i18n:domain="plone">
+   <property name="visible">True</property>
+  </object>
+  <object name="favorites" meta_type="CMF Action" i18n:domain="plone">
+   <property name="visible">True</property>
+  </object>
+ </object>
+ <object name="site_actions" meta_type="CMF Action Category">
+  <object name="sitemap" meta_type="CMF Action" i18n:domain="plone">
+   <property name="visible">True</property>
+  </object>
+  <object name="accessibility" meta_type="CMF Action" i18n:domain="plone">
+   <property name="visible">True</property>
+  </object>
+  <object name="contact" meta_type="CMF Action" i18n:domain="plone">
+   <property name="visible">True</property>
+  </object>
+  <object name="plone_setup" meta_type="CMF Action" i18n:domain="plone">
+   <property name="visible">False</property>
+  </object>
+  <object name="voirtouteslesressources" meta_type="CMF Action"
+     i18n:domain="plone">
+   <property name="visible">True</property>
+  </object>
+  <object name="dashboard" meta_type="CMF Action" i18n:domain="plone">
+   <property name="visible">True</property>
+  </object>
+  <object name="preferences" meta_type="CMF Action" i18n:domain="plone">
+   <property name="visible">True</property>
+  </object>
+  <object name="logout" meta_type="CMF Action" i18n:domain="plone">
+   <property name="visible">False</property>
+  </object>
+ </object>
+</object>
