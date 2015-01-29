@@ -1,0 +1,61 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr-FR"
+      lang="fr-FR"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="metnav">
+
+    <metal:block fill-slot="base">
+        <tal:block tal:define="dummy python:request.set('disable_border', 1)"
+                     tal:replace="nothing">
+            Disable the tabs
+        </tal:block>
+    </metal:block>
+<metal:block tal:define="dummy 
+python:request.RESPONSE.setHeader('expires', '+1')" />
+
+    <div metal:fill-slot="main" tal:omit-tag=""
+             tal:define="traverse_subpath python: request.get('traverse_subpath', []);">
+
+        <tal:block tal:condition="not:traverse_subpath">
+            <center i18n:translate="xml_select_res">Vous devez sélectionner un article à afficher.</center>
+        </tal:block>
+
+        <tal:block tal:condition="python:traverse_subpath and traverse_subpath[-1]!='@@aws-content-pdfbook'"><tal:block
+                   tal:define="
+                         templateId template/id;
+                         full_url python:'/' + '/'.join(traverse_subpath);
+                         urlData python:'/LOM_CSP_'+traverse_subpath[-1];
+                         portal context/@@plone_portal_state/portal;
+                         member context/@@plone_portal_state/member;
+                         portal_url context/@@plone_portal_state/portal_url;
+                         urlAbsolu context/absolute_url;
+                         xmlview context/@@XML;
+htmlview context/@@HTML;
+                         url request/PATH_TRANSLATED;
+                         idData python:traverse_subpath[-1];
+                         ">
+          <!-- Affichage des mots cles -->
+            <tal:block metal:define-macro="motsCles"
+                       tal:replace="structure python:portal.afficheMotsCles(urlData, portal_url)">
+                MotsClés
+            </tal:block> 
+<!-- Affichage de related_dossier -->
+            <div id="related-dossier">
+    <tal:block tal:content="structure python:portal.localRelatedDossier(urlData)">Is part of</tal:block>
+
+            </div>
+<!-- Affichage des classifications -->
+            <div id="classif" tal:content="structure python:portal.afficheClassif(urlData)">
+                Classification
+            </div>  
+            <!-- Article -->
+            <div id="article-xml">
+                <div tal:replace="structure python:xmlview.get_article_html(urlData)">article</div>
+<!--div tal:replace="structure python:htmlview.load_article_html(idData,templateId)">article</div-->
+            </div>
+
+            <!--div metal:use-macro="here/ressource/macros/motsCles" /--></tal:block>
+        </tal:block>
+
+    </div>
+</html>

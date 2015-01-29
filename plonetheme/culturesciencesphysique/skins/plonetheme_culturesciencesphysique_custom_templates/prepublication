@@ -1,0 +1,35 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr-FR"
+      lang="fr-FR"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+   <metal:block fill-slot="base">
+        <tal:block tal:define="dummy python:request.set('disable_border', 1)"
+                     tal:replace="nothing">
+            Disable the tabs
+        </tal:block>
+    </metal:block>
+
+    <div metal:fill-slot="main" tal:omit-tag="" tal:define="traverse_subpath python: request.get('traverse_subpath', []);">
+         <tal:block tal:condition="not:traverse_subpath">
+            <center i18n:translate="xml_select_res">Vous devez sélectionner une ressource à afficher.</center>
+        </tal:block>
+        <tal:block tal:condition="traverse_subpath">
+            <tal:block
+                 tal:define="url python:'/' + '/'.join(request['traverse_subpath']);
+                             urlData python:request['traverse_subpath'][-1];
+                             titre request/form/titre | nothing;
+                             xmlClass context/@@XMLdb">
+<!--p tal:content="template/id"/-->
+                 <!-- Article -->
+                 <div id="article-xml">
+                   <p tal:replace="structure python:xmlClass.get_directArticle_html(url)">L'article</p>
+                 </div>
+
+                 <div tal:omit-tag="" tal:condition="python:url == '/'">
+                   <center>Vous devez sélectionner une ressource à visualiser.</center>
+                 </div>
+            </tal:block>
+        </tal:block>
+    </div>
+</html>

@@ -1,0 +1,106 @@
+<div metal:define-macro="portlet">
+<dl class="portlet portletRSS" 
+     i18n:domain="plone">
+
+
+
+<div id="article-xml">
+    <div class="article" id="N10001">
+        <div class="titlepage">
+            <div>
+                <div>
+                    <div class="authorgroup">
+                        <div class="author">
+                            <h3 class="author">
+                                <span class="firstname">Granier</span> <span class="surname">Olivier</span></h3>
+                            <div class="affiliation">
+                                <span class="orgname">Lycée Jacques Decour, Paris<br />
+                                </span></div>
+                        </div>
+                        <div class="author">
+                            <h3 class="author">
+                                <span class="firstname">Delphine</span> <span class="surname">Chareyron</span></h3>
+                            <div class="affiliation">
+                                <span class="orgname">ENS Lyon<br />
+                                </span></div>
+                        </div>
+                        <div class="author">
+                            <h3 class="author">
+                                <span class="firstname">Nicolas</span> <span class="surname">Taberlet</span></h3>
+                            <div class="affiliation">
+                                <span class="orgname">ENS Lyon<br />
+                                </span></div>
+                        </div>
+                        <div class="othercredit">
+                            <h3 class="othercredit">
+                                <span class="firstname">Coréalisation et montage : Justine</span> <span class="surname">Chapelon</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="sect1" title="1. Écoulement de Poiseuille d'un fluide visqueux">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h2 class="title" id="N1003E">
+                                    1. Écoulement de Poiseuille d'un fluide visqueux</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        Une vidéo de 8&nbsp;mn&nbsp;29 qui permet de retrouver expérimentalement et analytiquement, le profil des vitesses de l'écoulement d'un fluide visqueux dans un tuyau, le calcul du débit ainsi qu'une application numérique.</p>
+                    <p>
+                        &nbsp;</p>
+                    <div class="informaltable">
+                        <table class="frame_all">
+                            <colgroup>
+                                <col class="c1" />
+                                <col />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="informalfigure">
+                                            <div class="mediaobject">
+                                                
+                                                <video controls="controls" id="player" width="640" class="videolink"> <source src="http://html5.ens-lyon.fr/CSP/Physique-animee/Poiseuille/La-physique-animee_poiseuille2.ogv" type="video/ogv">  </source>
+												<source src="http://html5.ens-lyon.fr/CSP/Physique-animee/Poiseuille/La-physique-animee_poiseuille2.webm" type="video/webm"> </source>
+												<source src="http://html5.ens-lyon.fr/CSP/Physique-animee/Poiseuille/La-physique-animee_poiseuille2.mp4" type="video/mp4"></source></video></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Chapitrage&nbsp;:</p>
+                                        <div class="itemizedlist">
+                                            <a name="list1321609888"> </a>
+                                            <ul class="itemizedlist" type="disc">
+                                                <li class="listitem">
+                                                    <a  href="#8" title="Introduction" rel="player" class="videolink">(0:00:08) Les travaux de Jean Léonard Poiseuille</a></li>
+                                                <li class="listitem">
+                                                    <a  href="#57" title="labo" rel="player" class="videolink">(0:01:57) Mise en évidence expérimentale du profil parabolique des vitesses à l'état stationnaire</a></li>
+                                                <li class="listitem">
+                                                    <a  href="#180" title="theorie" rel="player" class="videolink">(0:03:23) Mise en équation du profil des vitesses, le calcul du débit et une application numérique</a></li>
+                                                <li class="listitem">
+                                                    <a  href="#224" title="credits" rel="player" class="videolink">(0:08:23) Crédits</a></li>
+                                            
+                                            </ul>
+                                        </div>
+                                        </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>
+                        &nbsp;</p>
+                    <p>
+                        <span class="emphasis"><i>Le projet «&nbsp;La physique animée&nbsp;» est une collaboration entre <span class="link-external"><a class="link" href="http://www.unisciel.fr/" target="_blank">l'Université des sciences en ligne (Unisciel)</a></span> et le site <a class="link" href="http://culturesciencesphysique.ens-lyon.fr/" target="_top">CultureSciencesPhysique de l'ENS de Lyon.</a> </i> </span></p>
+                    <p>
+                        <span class="emphasis"><i>Réalisation&nbsp;: Olivier Granier, Delphine Chareyron, Nicolas Taberlet - Coréalisation et montage&nbsp;: Justine Chapelon - Images studio et incrustation&nbsp;: ENSmédia - Image Labo&nbsp;: Chez Moi Prod - Assistance Labo&nbsp;: Benoît Capitaine - Assistance graphique&nbsp;: Coralie Passaret - Musique&nbsp;: Stéphane Arbon. </i> </span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="videolink-1.0.js" type="text/javascript"></script>
+
+</dl>
+</div>

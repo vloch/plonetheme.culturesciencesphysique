@@ -1,0 +1,85 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+<metal:block fill-slot="top_slot"
+             tal:define="dummy python:request.set('disable_border', 1)" />
+
+<body>
+
+<div id="search-exist" metal:fill-slot="main"
+     tal:define="Batch python:modules['Products.CMFPlone'].Batch;
+                 sr context/@@SearchRecents;
+                 DateTime python:modules['DateTime'].DateTime;
+                 getToolByName python:modules['Products.CMFCore.utils'].getToolByName;
+                 mn_props python:getToolByName(context, 'portal_properties').metnav_properties;
+                 href_blank python:mn_props.getProperty('HREF_BLANK');
+                 b_start python:request.get('b_start',0);
+                 results_xml python:sr.searchRecentXMLDocs();">
+
+
+    <h1>Derni&egrave;res ressources publi&eacute;es</h1>
+<div class="documentDescription">
+        Les derni&egrave;res publications apparaissent au d&eacute;but de la liste.
+    </div>
+
+    <tal:block tal:condition="results_xml" tal:define="batch python:Batch(results_xml, 20, int(b_start), orphan=1)">
+       <!-- Navigation -->
+
+ <div metal:use-macro="here/batch_macros/macros/navigation" />       
+<div class="listeResults">
+        <tal:results tal:repeat="result batch">
+
+            <dl>
+ <dt>
+ <img width="180px"  style="float:left;clear:left;" tal:attributes="src python:result['res/urlLeadImage'][0]" tal:condition="python:result.has_key('res/urlLeadImage')" />       
+
+
+                    <a href="/view" target="_blank"
+                       tal:content="python:result['res/title'][0]"
+                       tal:condition="python:href_blank==True"
+                       tal:attributes="href  python:result['res/url'][0]">
+                    Title
+                    </a>
+                    <a href="/view"
+                       tal:content="python:result['res/title'][0]"
+                       tal:condition="python:href_blank==False"
+                       tal:attributes="href python:result['res/url'][0]">
+                    Title
+                    </a>
+
+                    <span class="discreet">
+                        par <span tal:repeat="auteur python:context.getAuteurs(result['res/author'][0])" tal:replace="string:${auteur}, "/>
+                        publié le <span tal:replace="python:here.toLocalizedTime(result['res/pubdate'][0])"/>
+                    </span>
+                </dt>
+
+
+               <dd><span tal:content="structure python:context.cropText(result['res/description'][0], 500) or nothing"> Description </span> <div id="typos"><span tal:repeat="img python:context.getRscIcon(str(result['res/type'][0]))">
+                                    <img src=""
+                                         tal:attributes="src string:${context/portal_url}/icones/${img};
+                                                 alt img;
+                                                 title python:(img.split('.')[0]!='type-video' and img.split('.')[0]) or (img.split('.')[0]=='type-video' and (img.split('.')[0]).replace('type-', ''))" />
+                                    </span></div></dd>
+            </dl>
+
+        </tal:results>
+</div>
+        <div class="spacer">
+        &nbsp;
+        </div>
+
+        <!-- Navigation -->
+        <div metal:use-macro="here/batch_macros/macros/navigation" />
+
+        </tal:block>
+
+    <p tal:condition="not: results_xml" i18n:translate="text_no_new_items">
+        No items have been published.
+    </p>
+  </div>
+
+</body>
+
+</html>
