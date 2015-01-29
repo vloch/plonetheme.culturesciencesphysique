@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <metadata>
-  <version>1000</version>
+  <version>29022015</version>
   <dependencies>
-        <dependency>profile-plonetheme.responsivetheme:default</dependency>
+        <dependency>profile-plonetheme.sunburst:default</dependency>
   </dependencies>
 </metadata>

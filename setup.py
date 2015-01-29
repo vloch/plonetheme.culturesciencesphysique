@@ -25,7 +25,6 @@ setup(name='plonetheme.culturesciencesphysique',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'plonetheme.responsivetheme'
           # -*- Extra requirements: -*-
       ],
       entry_points="""
