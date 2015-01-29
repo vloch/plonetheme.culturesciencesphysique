@@ -6,10 +6,4 @@
 <portlets>
 	<!-- -*- extra stuff goes here -*- -->
 
-   <portlet
-     addview="portlets.Ressources"
-     title="CulturesciencesPhysique - Ressources"
-     description="Ressources"
-   />
-
 </portlets>

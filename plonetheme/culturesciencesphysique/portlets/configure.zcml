@@ -8,15 +8,5 @@
   <include package="plone.app.portlets" />
   <!-- -*- extra stuff goes here -*- -->
 
-  <plone:portlet
-      name="portlets.Ressources"
-      interface=".ressources.Iressources"
-      assignment=".ressources.Assignment"
-      view_permission="zope2.View"
-      edit_permission="cmf.ManagePortal"
-      renderer=".ressources.Renderer"
-      addview=".ressources.AddForm"
-      editview=".ressources.EditForm"
-      />
 
 </configure>
