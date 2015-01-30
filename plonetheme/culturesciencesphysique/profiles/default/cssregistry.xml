@@ -2,13 +2,13 @@
 <!-- This file holds the setup configuration for the portal_css tool. -->
 
 <object name="portal_css">
- <stylesheet title="csp.css"
-    id="++resource++plonetheme.culturesciencesphysique.stylesheets/csp.css"
+ <stylesheet title="docbook.css"
+    id="++resource++plonetheme.culturesciencesphysique.stylesheets/docbook.css"
     media="screen" rel="stylesheet" rendering="import"
     cacheable="True" compression="safe" cookable="True"
     enabled="1" expression=""/>
- <stylesheet title="docbook.css"
-    id="++resource++plonetheme.culturesciencesphysique.stylesheets/docbook.css"
+ <stylesheet title="csp.css"
+    id="++resource++plonetheme.culturesciencesphysique.stylesheets/csp.css"
     media="screen" rel="stylesheet" rendering="import"
     cacheable="True" compression="safe" cookable="True"
     enabled="1" expression=""/>

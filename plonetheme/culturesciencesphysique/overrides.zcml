@@ -4,12 +4,12 @@
 
     <!-- Define some viewlets -->
 
-    <!-- Colophon -->
+    <!-- logo Plone -->
     <browser:viewlet
-        name="plone.colophon"
+        name="plone.logo"
         for="*"
-        manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
-        template="browser/templates/colophon.pt"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        template="browser/templates/logo-plone.pt"
         permission="zope.Public"
         />
 

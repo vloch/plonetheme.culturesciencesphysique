@@ -111,5 +111,5 @@ class LogoViewlet(ViewletBase):
     index = ViewPageTemplateFile('templates/logo.pt')
 
 
-class BannerViewlet(ViewletBase):
-    index = ViewPageTemplateFile('templates/banner.pt')
+class LogoPloneViewlet(ViewletBase):
+    index = ViewPageTemplateFile('templates/logo-plone.pt')
