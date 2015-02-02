@@ -22,7 +22,7 @@
   </order>
 
   <hidden manager="plone.portalheader" skinname="CultureSciencesPhysique">
-    <viewlet name="plone.logo" />
+    <!--viewlet name="plone.logo" /-->
     <!--viewlet name="plone.searchbox" /-->
     <viewlet name="plone.global_sections" />
   </hidden>

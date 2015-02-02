@@ -1,11 +1,10 @@
-<a metal:define-macro="portal_logo"
-   id="portal-logo"
+<a id="portal-logo"
    title="Home"
    accesskey="1"
-   tal:attributes="href view/navigation_root_url"
+   tal:attributes="href string:${context/portal_url}"
    i18n:domain="plone"
    i18n:attributes="title">
-    <img src="logo-csp.png" alt=""/></a>
+    <img src="logo-csp.png" tal:attributes="src string:${context/portal_url}/logo-csp.png" alt="logo-csp.png"/></a>
 
 
 <div id="slogan">

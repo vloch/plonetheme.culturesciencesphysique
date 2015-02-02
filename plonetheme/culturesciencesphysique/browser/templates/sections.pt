@@ -164,7 +164,7 @@
                 </li>
 
 <!-- *********************Menu dossiers thématiques***************** -->
-                <li id="portaltab-4" tal:attributes="class python: 'selected' or 'plain'" tal:define="items python:catalog.searchResults(portal_type='Folder', path={'query': '/site/dossiersthematiques','depth': 1}, review_state='published', sort_on='sortable_title', sort_order='ascending');">
+                <li id="portaltab-4" tal:attributes="class python: 'selected' or 'plain'" tal:define="items python:catalog.searchResults(portal_type='Folder', path={'query': '/csphysique/dossiersthematiques','depth': 1}, review_state='published', sort_on='getObjPositionInParent', sort_order='ascending');">
                 <a href="" title="Dossiers thématiques" class="mainTabContent"
                    tal:attributes="href string:${context/portal_url}/dossiersthematiques"> Dossiers thématiques</a>
                     <ul class="submenu" id="dossiersthematiques">
