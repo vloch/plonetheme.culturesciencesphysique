@@ -20,6 +20,7 @@ from Products.CMFPlone.utils import safe_unicode
 from Products.Five.browser import BrowserView
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from plone.app.layout.viewlets.common import ViewletBase
+from plone.app.layout.viewlets.common import SearchBoxViewlet
 
 from plone.app.layout.globals.interfaces import IViewView
 
@@ -109,6 +110,9 @@ class TitleViewlet(ViewletBase):
 
 class LogoViewlet(ViewletBase):
     index = ViewPageTemplateFile('templates/logo.pt')
+	
+class CSPseachBoxViewlet(SearchBoxViewlet):
+    index = ViewPageTemplateFile('templates/searchbox.pt')
 
 
 class LogoPloneViewlet(ViewletBase):

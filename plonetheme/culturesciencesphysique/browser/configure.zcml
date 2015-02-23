@@ -23,7 +23,13 @@
       class=".viewlets.LogoViewlet"
       permission="zope2.View"
       />
-
+  <!-- The logo -->
+  <browser:viewlet
+      name="csp.searchbox"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      class=".viewlets.CSPseachBoxViewlet"
+      permission="zope2.View"
+      />
   <!-- Zope 3 browser resources -->
 
   <browser:resourceDirectory

@@ -16,6 +16,7 @@
     <viewlet name="csp.logo"
              insert-before="plone.global_sections" />
    <viewlet name="enslyon.global_sections_csp"/>
+   <viewlet name="csp.searchbox"/>
   </order>
   <order manager="plone.portalfooter" skinname="CultureSciencesPhysique"
          based-on="Metnav">

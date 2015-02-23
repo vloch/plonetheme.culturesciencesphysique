@@ -1,0 +1,63 @@
+<div id="portal-searchbox"
+     i18n:domain="plone">
+    <form name="searchform"
+          action="search"
+          tal:define="searchType python:context.REQUEST.get('type_ressources') or 'par_theme';
+                part request/part | python:'//Physique';
+                termes request/termes | python:'';
+                termes python:' '.join(termes.split());
+                urn request/urn | python:'12';
+                obj request/obj | python:'';
+                media request/media | python:'';
+                criteresTri request/criteresTri |python:'date';
+                ordreTri request/ordreTri | python:'descending'"
+          tal:attributes="action string:${view/site_url}/${searchType}">
+
+        <div class="LSBox">
+        <input name="termes"
+               type="text"
+               size="18"
+               value=""
+               id="search-metnav"
+               accesskey="4"
+               tal:define="service request/service|nothing;
+                           value request/termes|nothing;"
+               tal:attributes="value python:service == 'cumulus' and value.decode('latin1').encode('utf8') or value;"
+               class="inputLabel" />
+<!--input type="text" name="termes" id="search-metnav-x" class="inputLabel" disabled="disabled" /-->
+
+        <input type="hidden" value="0" name="fuzzy" />
+<tal:valuePlone tal:condition="python:searchType=='par_theme'">
+<input type="hidden" name="part" tal:attributes="value part"/>
+<input type="hidden" name="urn" tal:attributes="value urn"/>
+<input type="hidden" name="obj" tal:attributes="value obj"/>
+<input type="hidden" name="media" tal:attributes="value media"/>
+<input type="hidden" name="criteresTri" tal:attributes="value criteresTri"/>
+<input type="hidden" name="ordreTri" tal:attributes="value ordreTri"/>
+</tal:valuePlone>
+        <input class="searchButton"
+               type="image"
+               tal:attributes="src string:${view/site_url}/loupe.jpg"
+               align="bottom" />
+
+
+
+        <div class="LSResult" id="LSResult" style=""><div class="LSShadow" id="LSShadow"></div></div>
+        </div>
+    </form>
+
+    <div id="portal-advanced-search"
+         class="hiddenStructure">
+        <a href="#"
+           tal:attributes="href string:${view/site_url}/search_form"
+           i18n:translate="label_advanced_search"
+           accesskey="5">
+            Advanced Search&hellip;
+        </a>
+    </div>
+<!--script type="text/javascript" src="jquery-182min.js"></script>
+    <script type="text/javascript" src="jquery-mockjax.js"></script>
+    <script type="text/javascript" src="jquery-autocomplete.js"></script>
+<script type="text/javascript" tal:content="string:mots=${context/getKeywords}"></script>
+    <script type="text/javascript" src="demo.js"></script-->
+</div>
