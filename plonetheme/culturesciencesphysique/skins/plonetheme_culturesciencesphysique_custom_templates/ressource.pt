@@ -1,21 +1,16 @@
 <!doctype html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr-FR"
-      lang="fr-FR"
-      metal:use-macro="here/main_template/macros/master"
-      i18n:domain="metnav">
-
-    <metal:block fill-slot="base">
-        <tal:block tal:define="dummy python:request.set('disable_border', 1)"
-                     tal:replace="nothing">
-            Disable the tabs
-        </tal:block>
-    </metal:block>
-<metal:block tal:define="dummy 
-python:request.RESPONSE.setHeader('expires', '+1')" />
-
-    <div metal:fill-slot="main" tal:omit-tag=""
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="fr"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="plone">
+<body>
+   <metal:main fill-slot="main">
+    <tal:main-macro metal:define-macro="main"
              tal:define="traverse_subpath python: request.get('traverse_subpath', []);">
-
+        <div tal:replace="structure provider:plone.abovecontenttitle" />
         <tal:block tal:condition="not:traverse_subpath">
             <center i18n:translate="xml_select_res">Vous devez sélectionner un article à afficher.</center>
         </tal:block>
@@ -56,6 +51,7 @@ htmlview context/@@HTML;
 
             <!--div metal:use-macro="here/ressource/macros/motsCles" /--></tal:block>
         </tal:block>
-
-    </div>
+</tal:main-macro>
+</metal:main>
+</body>
 </html>
