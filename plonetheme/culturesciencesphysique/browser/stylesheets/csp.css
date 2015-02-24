@@ -839,27 +839,27 @@ color:#000!important;
 display:inline!important;
 }
 
-#portletwrapper-636f6c6c6167652e706f72746c65746d616e616765720a636f6e746578740a2f736974652f6163637565696c2f312f310a61636365732d646972656374 {
+#portletwrapper-636f6c6c6167652e706f72746c65746d616e616765720a636f6e746578740a2f637370687973697175652f6163637565696c2f312f310a61636365732d646972656374 {
 float:left;
 width:25%;
 }
 
-#portletwrapper-636f6c6c6167652e706f72746c65746d616e616765720a636f6e746578740a2f736974652f6163637565696c2f312f310a706f72746c65742d64652d63686f69782d6465732d726573736f75726365732d6c65732d706c75732d76756573 {
+#portletwrapper-636f6c6c6167652e706f72746c65746d616e616765720a636f6e746578740a2f637370687973697175652f6163637565696c2f312f310a706f72746c65742d64652d63686f69782d6465732d726573736f75726365732d6c65732d706c75732d76756573 {
 float:left;
 width:49%;
 }
 
-#portletwrapper-636f6c6c6167652e706f72746c65746d616e616765720a636f6e746578740a2f736974652f6163637565696c2f312f310a612d6c612d756e65 {
+#portletwrapper-636f6c6c6167652e706f72746c65746d616e616765720a636f6e746578740a2f637370687973697175652f6163637565696c2f312f310a612d6c612d756e65 {
 float:left;
 width:25%;
 }
-#portletwrapper-636f6c6c6167652e706f72746c65746d616e616765720a636f6e746578740a2f736974652f6163637565696c2f312f310a612d6c612d756e65 dd.portletItem div.ImageBg {
+#portletwrapper-636f6c6c6167652e706f72746c65746d616e616765720a636f6e746578740a2f637370687973697175652f6163637565696c2f312f310a612d6c612d756e65 dd.portletItem div.ImageBg {
 width:100%;
 height:160px;
 display:block;
 }
 
-#portletwrapper-636f6c6c6167652e706f72746c65746d616e616765720a636f6e746578740a2f736974652f6163637565696c2f312f310a612d6c612d756e65 div.ImageBg p {
+#portletwrapper-636f6c6c6167652e706f72746c65746d616e616765720a636f6e746578740a2f637370687973697175652f6163637565696c2f312f310a612d6c612d756e65 div.ImageBg p {
 display:block;
 position:relative;
 top:92px;
@@ -1281,7 +1281,42 @@ visibility:hidden;
 }
 
 /*autocomplete for search engine*/
-.autocomplete-w1 { background:url(img/shadow.png) no-repeat bottom right; position:absolute; top:0px; left:0px; margin:6px 0 0 6px; /* IE6 fix: */ _background:none; _margin:1px 0 0 0; } 
+.autocomplete-suggestions {
+	border: 1px solid #FA8C01; 
+	background: #F4DDC1; 
+	cursor: pointer; 
+	overflow: auto; 
+	-webkit-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); 
+	-moz-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); 
+	box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64);
+        min-width:250px;
+	}
+.autocomplete-suggestion {
+	padding: 1px 5px; 
+	white-space: nowrap; 
+	overflow: hidden; }
+.autocomplete-no-suggestion { 
+	padding: 1px 5px;
+	}
+.autocomplete-selected {
+	background: #F0F0F0;
+	}
+.autocomplete-suggestions strong {
+	font-weight: bold; 
+	color: #000; }
+.autocomplete-group {
+	padding: 1px 5px;
+	}
+.autocomplete-group strong {
+	font-weight: bold; 
+	font-size: 16px; 
+	color: #000; 
+	display: block; 
+	border-bottom: 1px solid #000; 
+	}
+
+.autocomplete-w1 {
+	position:absolute; top:0px; left:0px; margin:6px 0 0 6px; /* IE6 fix: */ _background:none; _margin:1px 0 0 0; } 
 .autocomplete { border:1px solid #999; background:#FFF; cursor:default; text-align:left; max-height:350px; overflow:auto; margin:-6px 6px 6px -6px; /* IE6 specific: */ _height:350px;  _margin:0; _overflow-x:hidden; } 
 .autocomplete .selected { background:#F0F0F0; } 
 .autocomplete div { padding:2px 5px; white-space:nowrap; overflow:hidden; } 

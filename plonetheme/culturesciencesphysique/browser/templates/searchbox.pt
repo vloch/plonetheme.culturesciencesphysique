@@ -24,8 +24,6 @@
                            value request/termes|nothing;"
                tal:attributes="value python:service == 'cumulus' and value.decode('latin1').encode('utf8') or value;"
                class="inputLabel" />
-<!--input type="text" name="termes" id="search-metnav-x" class="inputLabel" disabled="disabled" /-->
-
         <input type="hidden" value="0" name="fuzzy" />
 <tal:valuePlone tal:condition="python:searchType=='par_theme'">
 <input type="hidden" name="part" tal:attributes="value part"/>
@@ -55,9 +53,9 @@
             Advanced Search&hellip;
         </a>
     </div>
-<!--script type="text/javascript" src="jquery-182min.js"></script>
+	<script type='text/javascript' src='jquery.js' tal:attributes="src string:${context/portal_url}/jquery.js"></script>
     <script type="text/javascript" src="jquery-mockjax.js"></script>
     <script type="text/javascript" src="jquery-autocomplete.js"></script>
 <script type="text/javascript" tal:content="string:mots=${context/getKeywords}"></script>
-    <script type="text/javascript" src="demo.js"></script-->
+    <script type="text/javascript" src="demo.js"></script>
 </div>

@@ -67,8 +67,8 @@ class TitleViewlet(ViewletBase):
         exist_base_url = metnav_props.getProperty('URL_DOC')
         view_url = portal_state.navigation_root_url() + exist_base_url
         if self.request.other['URL'] == view_url:
-            sub_path = '/' + '/'.join(self.request.other['traverse_subpath'])
-            assert(sub_path.startswith(metnav_props.getProperty('COLLECTION_METADATA')))
+            sub_path = '/'.join(self.request.other['traverse_subpath'])
+            #assert(sub_path.startswith(metnav_props.getProperty('COLLECTION_METADATA')))
 
             document_url = view_url + sub_path
 
@@ -80,7 +80,7 @@ class TitleViewlet(ViewletBase):
                         "base.internal": document_url
                     })),
                 'XSL': 'page',
-                'DOC_URL': sub_path,
+                'DOC_URL': '/db/csphysique/metadata/LOM_CSP_'+sub_path,
                 'DB_XSL': metnav_props.getProperty('DB_XSL'),
                 'LD2DB_XSL': metnav_props.getProperty('LD2DB_XSL'),
             }
@@ -102,7 +102,7 @@ class TitleViewlet(ViewletBase):
                     logger.info('\n\nNO RESULT\n')
 
             self.site_title = u"%s &mdash; %s" % (escape(safe_unicode(str(res).strip())), portal_title)
-
+        
         elif page_title == portal_title:
             self.site_title = portal_title
         else:
