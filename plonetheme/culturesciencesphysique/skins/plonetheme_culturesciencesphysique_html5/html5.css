@@ -1,0 +1,631 @@
+/* default: 320*32px, gray */
+.smil-controlBar {
+  width: 320px;
+  color: white;
+  background-color: #FFF;
+  -moz-box-shadow: 0 0 5px #727171;
+  -webkit-box-shadow: 0 0 5px #727171;
+  box-shadow: 0 0 5px #727171;
+}
+.smil-controlBar button,
+.smil-timeSegments a {
+  background-color: #999;
+  color: white !important;
+}
+.smil-controlBar button:hover,
+.smil-timeSegments a:hover,
+.smil-timeSegments a.current {
+  background-color: none;
+}
+.smil-controlBar button {
+background:none;
+border:none;
+}
+
+/* left/right toolbars */
+.smil-left {
+  float: left;
+  margin-left: 5px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.smil-right {
+  float: right;
+  margin-right: 5px;
+  margin-top: 3px;
+  display: table-cell;
+  vertical-align: middle;
+}
+* html .smil-left { /* IE6 */
+  margin-left: 2px;
+}
+* html .smil-right { /* IE6 */
+  margin-right: 2px;
+}
+
+/* toolbar buttons */
+.smil-controlBar button {
+  /*display: block;*/
+  /*float: left;*/
+  width: 24px;
+  margin: 0 -3px;
+  padding: 1px 4px;
+  vertical-align: middle;
+  font-size: 12px;
+  text-align: center;
+}
+* html .smil-controlBar button { /* IE6 */
+  /*margin: 0 -1px;*/
+  margin: 0;
+  padding: 1px;
+}
+.smil-left  button:first-child,
+.smil-right button:first-child {
+  border-top-left-radius         : 10px;
+  -o-border-top-left-radius      : 10px;
+  -moz-border-radius-topleft     : 10px;
+  -webkit-border-top-left-radius : 10px;
+  border-bottom-left-radius         : 10px;
+  -o-border-bottom-left-radius      : 10px;
+  -moz-border-radius-bottomleft     : 10px;
+  -webkit-border-bottom-left-radius : 10px;
+}
+.smil-left  button:last-child,
+.smil-right button:last-child {
+  border-top-right-radius         : 10px;
+  -o-border-top-right-radius      : 10px;
+  -moz-border-radius-topright     : 10px;
+  -webkit-border-top-right-radius : 10px;
+  border-bottom-right-radius         : 10px;
+  -o-border-bottom-right-radius      : 10px;
+  -moz-border-radius-bottomright     : 10px;
+  -webkit-border-bottom-right-radius : 10px;
+}
+
+/* play/pause button */
+button.smil-play {
+  border-radius         : 10px !important;
+  -o-border-radius      : 10px !important;
+  -moz-border-radius    : 10px !important;
+  -webkit-border-radius : 10px !important;
+  height: 32px;
+
+  /*
+  border-radius         : 16px !important;
+  -o-border-radius      : 16px !important;
+  -moz-border-radius    : 16px !important;
+  -webkit-border-radius : 16px !important;
+  height: 32px;
+  width: 32px;
+  */
+  background-image: url(html5/progress.gif);
+  background-position: center center;
+  background-repeat: no-repeat;
+  /*z-index: 20;*/
+}
+* html button.smil-play { /* IE6 */
+  width: 32px;
+}
+button.smil-play span {
+  display: none;
+}
+
+button.smil-prev span,button.smil-next span,button.smil-first span,button.smil-last span {
+visibility:hidden;
+}
+
+.paused button.smil-play {
+  background-image: url(html5/media-play.png);
+  cursor:pointer;
+}
+.playing button.smil-play {
+  background-image: url(html5/media-pause.png);
+  cursor:pointer;
+}
+button.smil-prev {
+  background-image: url(html5/media-prev.png);
+    background-position: center center;
+  background-repeat: no-repeat;
+  cursor:pointer;
+}
+button.smil-next {
+  background-image: url(html5/media-next.png);
+    background-position: center center;
+  background-repeat: no-repeat;
+  cursor:pointer;
+}
+button.smil-first {
+  background-image: url(html5/media-first.png);
+    background-position: center center;
+  background-repeat: no-repeat;
+  cursor:pointer;
+}
+ button.smil-last {
+  background-image: url(html5/media-last.png);
+    background-position: center center;
+  background-repeat: no-repeat;
+  cursor:pointer;
+}
+
+* html .paused button.smil-play { /* IE6 */
+  background-image: url(html5/media-play.gif);
+}
+* html .playing button.smil-play { /* IE6 */
+  background-image: url(html5/media-pause.gif);
+}
+
+/* ToC button */
+button.smil-tocDisplay {
+  border-radius         : 5px !important;
+  -o-border-radius      : 5px !important;
+  -moz-border-radius    : 5px !important;
+  -webkit-border-radius : 5px !important;
+  height: 24px;
+  width: 24px;
+  background-image: url(html5/media-toc.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+* html button.smil-tocDisplay { /* IE6 */
+  background-image: url(html5/media-toc.gif);
+}
+button.smil-tocDisplay span {
+  display: none;
+}
+
+/* timeline (width is automatically set by timecontroller.js) */
+.smil-timeline {
+  float: left;
+  margin-left: 12px;
+  margin-top: 5px;
+  padding: 0;
+  height: 24px;
+  /*overflow: hidden;*/
+  /*overflow-x: hidden;*/
+  /*overflow-y: hidden;*/
+  position: relative;
+  border-radius         : 5px;
+  -o-border-radius      : 5px;
+  -moz-border-radius    : 5px;
+  -webkit-border-radius : 5px;
+}
+.smil-timeSegments a {
+  display: block;
+  float: left;
+  margin: 5px 0;
+  padding: 0;
+  height: 12px;
+  text-decoration: none;
+}
+.smil-timeline .smil-timeSegments a:first-child {
+  border-top-left-radius         : 10px;
+  -o-border-top-left-radius      : 10px;
+  -moz-border-radius-topleft     : 10px;
+  -webkit-border-top-left-radius : 10px;
+  border-bottom-left-radius         : 10px;
+  -o-border-bottom-left-radius      : 10px;
+  -moz-border-radius-bottomleft     : 10px;
+  -webkit-border-bottom-left-radius : 10px;
+}
+.smil-timeline .smil-timeSegments a:last-child {
+  border-top-right-radius         : 10px;
+  -o-border-top-right-radius      : 10px;
+  -moz-border-radius-topright     : 10px;
+  -webkit-border-top-right-radius : 10px;
+  border-bottom-right-radius         : 10px;
+  -o-border-bottom-right-radius      : 10px;
+  -moz-border-radius-bottomright     : 10px;
+  -webkit-border-bottom-right-radius : 10px;
+}
+.smil-timeSegments a span,
+.dragging .smil-timeSegments a:hover span {
+  display: none;
+}
+.smil-timeSegments a:hover span {
+  display: block;
+  position: absolute;
+  top: -16px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white !important;
+}
+
+/* timeline: elapsed time */
+.smil-timeCursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  /*width: 0;*/
+  width: 20px;
+  margin-left: -10px;
+  z-index: 10;
+  /*border-right: 2px solid white;*/
+  cursor: col-resize;
+  background-image: url(html5/cursor-white.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.smil-currentTime {
+  margin-top: 5px;
+  padding: 0 8px;
+  /*height: 24px;*/
+  font-size: 12px;
+  line-height: 24px;
+}
+.smil-timeSlider {
+  height: 100%;
+  width: 0;
+  border-radius         : 10px;
+  -o-border-radius      : 10px;
+  -moz-border-radius    : 10px;
+  -webkit-border-radius : 10px;
+}
+
+/* active item in the table of contents */
+.smil-toc li.current > a {
+  font-weight: bold;
+
+}
+/* IE6 sucks badly */
+* html .smil-toc li.current a {
+  font-weight: bold;
+  color: orange !important;
+}
+* html .smil-toc li.current li a {
+  font-weight: normal;
+  color: white !important;
+}
+* html .smil-toc li li.current a {
+  font-weight: bold;
+  color: orange !important;
+}
+
+
+
+/* default slideshow layout */
+#slideshow {
+  position: relative;
+  width: 1024px;
+  height: 560px;
+  margin:0 auto 0 auto;
+}
+video {
+  position: absolute;
+  top: 20px;
+  left: 685px;
+  border:2px solid white;
+  -moz-box-shadow: 0 0 5px #555555;
+  -webkit-box-shadow: 0 0 5px#555555;
+  box-shadow: 0 0 5px #555555;
+}
+div#images {
+  position: relative;
+  top: 20px;
+  left: 15px;
+  width: 640px;
+  height: 480px;
+  overflow: hidden;
+  border:2px solid white;
+  -moz-box-shadow: 0 0 5px #555555;
+  -webkit-box-shadow: 0 0 5px#555555;
+  box-shadow: 0 0 5px #555555;
+  
+}
+div#images img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* alternative slideshow layout */
+#swap {
+  position: absolute;
+  left: 685px;
+  top: 266px;
+  font-size: 22px;
+  font-weight: bold;
+  /*color: white;*/
+  border: none;
+  border-radius         : 5px;
+  -o-border-radius      : 5px;
+  -moz-border-radius    : 5px;
+  -webkit-border-radius : 5px;
+  cursor: pointer;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  margin: 5px 0 0 0;
+  max-width: 24px !important;
+  max-height: 24px !important;
+  background-color:white;
+  background-image: url(html5/swap.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+    -moz-box-shadow: 0 0 5px #555555;
+  -webkit-box-shadow: 0 0 5px#555555;
+  box-shadow: 0 0 5px #555555;
+}
+#swap span {
+  display: none;
+}
+div#images, video {
+  transition         : all 1s;
+  -o-transition      : all 1s;
+  -moz-transition    : all 1s;
+  -webkit-transition : all 1s;
+  z-index: 1;
+}
+.swapped video {
+  width: 640px !important;
+  height: 480px !important;
+  transform         : translate(-670px);
+  -o-transform      : translate(-670px);
+  -ms-transform     : translate(-670px);
+  -moz-transform    : translate(-670px);
+  -webkit-transform : translate(-670px);
+}
+.swapped div#images {
+  width: 320px !important;
+  height: 240px !important;
+  transform         : translate(+670px);
+  -o-transform      : translate(+670px);
+  -ms-transform     : translate(+670px);
+  -moz-transform    : translate(+670px);
+  -webkit-transform : translate(+670px);
+}
+
+/* Table of Contents */
+div.smil-toc {
+  width: 310px;
+  height: 240px;
+  overflow: auto;
+  position: absolute;
+  right: 5px;
+  top: 270px;
+}
+div.smil-toc ul {
+  margin: 0;
+  margin-top: 0.8em;
+  list-style-type: none !important;
+  padding-left:15px;
+}
+div.smil-toc ul ul {
+  margin-top: 0;
+}
+div.smil-toc ul a {
+  text-decoration: none;
+}
+div.smil-toc ul a:hover {
+  text-decoration: underline;
+}
+
+/* timeline */
+.smil-controlBar {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 1000px;
+  z-index: 2;
+  -moz-box-shadow: 0 0 5px #555555;
+  -webkit-box-shadow: 0 0 5px#555555;
+  box-shadow: 0 0 5px #555555;
+}
+.smil-timeline, .smil-timeline a:hover span {
+  /*width: 810px;*/
+}
+.smil-timeSegments, .smil-timeCursor {
+  display: block;
+}
+.smil-timeSlider {
+  display: none;
+}
+
+div.smil-timeline a.current {
+background:url(html5/fond-loading.jpg) repeat-x !important;
+height:10px!important;
+}
+
+div.smil-timeline a[smil="done"]{
+background:url(html5/fond-loading.jpg) repeat-x!important;
+height:10px!important;
+}
+
+div.smil-timeline a[smil="done"]:first-child, div.smil-timeline a[smil="active"]:first-child {
+-webkit-border-top-left-radius: 5px;
+-webkit-border-bottom-left-radius: 5px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-bottomleft: 5px;
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+}
+
+div.smil-timeline a[smil="idle"]:last-of-type , div.smil-timeline a[smil="active"]:last-of-type, div.smil-timeline a[smil="done"]:last-of-type{
+-webkit-border-top-right-radius: 5px;
+-webkit-border-bottom-right-radius: 5px;
+-moz-border-radius-topright: 5px;
+-moz-border-radius-bottomright: 5px;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+}
+
+div.smil-timeline a[smil="idle"]{
+background:#706d6d!important;
+height:10px!important;
+}
+
+div.smil-timeline a[smil="idle"]:hover {
+background:#575555!important;
+height:10px!important;
+}
+
+.smil-timeCursor {
+background:url(html5/curseur.png) no-repeat !important;
+}
+
+div.smil-timeline a:hover span {
+margin-top:-8px!important;
+}
+
+.smil-timeSegments a span,.smil-timeSegments a:hover span {
+color:white!important;
+margin-bottom:30px;
+
+}
+
+.smil-controlBar {
+color:#575555 !important;
+
+}
+
+/* cross-fade transitions */
+.cross-fade div#images img {
+  opacity: 0;
+  transition         : opacity 1s;
+  -o-transition      : opacity 1s;
+  -moz-transition    : opacity 1s;
+  -webkit-transition : opacity 1s;
+}
+/*
+.cross-fade div#images img[smil=active],
+.cross-fade div#images img:first-child[smil=idle] {
+  opacity: 1;
+  z-index: 1;
+}
+*/
+.cross-fade div#images img[smil=active] {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* slide-in transitions */
+.slide-in div#images img {
+  transition         :         transform 1s;
+  -o-transition      :      -o-transform 1s;
+  -moz-transition    :    -moz-transform 1s;
+  -webkit-transition : -webkit-transform 1s;
+}
+.slide-in div#images img[smil=idle] {
+  transform         : translate(0, +480px);
+  -o-transform      : translate(0, +480px);
+  -moz-transform    : translate(0, +480px);
+  -webkit-transform : translate(0, +480px);
+}
+.slide-in div#images img[smil=done] {
+  transform         : translate(0, -480px);
+  -o-transform      : translate(0, -480px);
+  -moz-transform    : translate(0, -480px);
+  -webkit-transform : translate(0, -480px);
+}
+.smil-controlBar {
+  /*background-color: #faf4a3;*/
+  background-color: #FFF;
+}
+
+.smil-toc li.current > a {
+  color: #199d00 !important;
+}
+
+.smil-timeSegments a span {
+  border-top-left-radius          : 8px;
+  -o-border-top-left-radius       : 8px;
+  -moz-border-radius-topleft      : 8px;
+  -webkit-border-top-left-radius  : 8px;
+  border-top-right-radius         : 8px;
+  -o-border-top-right-radius      : 8px;
+  -moz-border-radius-topright     : 8px;
+  -webkit-border-top-right-radius : 8px;
+  background-color: #555;
+  margin-top: -8px;
+  padding: 4px 0;
+}
+
+/* hide inactive sublists */
+.smil-toc li ul {
+  display: none;
+}
+.smil-toc li.current ul {
+  display: block;
+}
+
+/* put the video+ToC on the left */
+#swap {
+  left: 315px;
+  background-image: url(html5/swap-reverse.png);
+}
+div#images {
+  left: 370px;
+}
+div.smil-toc {
+  right: auto;
+  left: 0;
+}
+video {
+  left: 15px;
+}
+.swapped video {
+  transform         : translate(+355px);
+  -o-transform      : translate(+355px);
+  -ms-transform     : translate(+355px);
+  -moz-transform    : translate(+355px);
+  -webkit-transform : translate(+355px);
+}
+.swapped div#images {
+  transform         : translate(-355px);
+  -o-transform      : translate(-355px);
+  -ms-transform     : translate(-355px);
+  -moz-transform    : translate(-355px);
+  -webkit-transform : translate(-355px);
+}
+
+video.multivideo[smil="active"] {
+    display: block;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    cursor:pointer;
+}
+
+video.multivideo[smil="done"] {
+    display: none;
+}
+
+video.multivideo[smil="idle"] {
+    display: none;
+}
+
+video.multivideo {
+-moz-box-shadow:none;
+-webkit-box-shadow:none;
+box-shadow:none;
+border:none;
+}
+
+.swapped video.multivideo {
+height:auto!important;
+width:auto!important;
+transform:none!important;
+max-width:100%!important;
+}
+
+.HTML5audio div.smil-toc {
+top: 60px;
+right: auto;
+left: 0;
+height: 450px;
+background:none!important;
+}
+
+.HTML5audio div#images {
+left: 360px;
+}
+
+.HTML5audio #swap {
+display: none;
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!-- This file holds the setup configuration of the viewlet managers
+     for the "CultureSciencesPhysique" skin.
+     -->
+
+<object>
+  <!--order manager="plone.personal_bar" skinname="CultureSciencesPhysique"
+         based-on="Sunburst">
+    <viewlet name="csp.logo"
+             insert-before="plone.global_sections" />
+   <viewlet name="enslyon.global_sections_csp"/>
+  </order-->
+  <order manager="plone.portalheader" skinname="CultureSciencesPhysique"
+         based-on="Metnav">
+    <viewlet name="plone.personal_bar"/>
+    <viewlet name="csp.logo"
+             insert-before="plone.global_sections" remove="True"/>
+   <viewlet name="enslyon.global_sections_csp" remove="True"/>
+   <viewlet name="csp.searchbox" remove="True"/>
+  </order>
+  <order manager="plone.portalfooter" skinname="CultureSciencesPhysique"
+         based-on="Metnav">
+  </order>
+
+  <hidden manager="plone.portalheader" skinname="CultureSciencesPhysique">
+    <!--viewlet name="plone.logo" /-->
+    <!--viewlet name="plone.searchbox" /-->
+    <viewlet name="plone.global_sections" />
+  </hidden>
+
+  <hidden manager="plone.abovecontent" skinname="CultureSciencesPhysique">
+    <viewlet name="plone.path_bar" />
+  </hidden>
+  <hidden manager="plone.portalfooter" skinname="CultureSciencesPhysique">
+    <viewlet name="plone.site_actions" />
+	<viewlet name="plone.colophon" />
+	<viewlet name="plone.footer" />
+  </hidden>
+
+</object>
