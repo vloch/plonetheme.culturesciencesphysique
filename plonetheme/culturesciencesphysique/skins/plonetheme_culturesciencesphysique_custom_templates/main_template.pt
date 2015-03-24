@@ -22,6 +22,9 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta property="og:url" content="" tal:attributes="content python:context.portal_url()+'/' + '/'.join(traverse_subpath);"/>
+	<meta property="og:type" content="article" />
+	<meta property="og:image" content="http://culturesciencesphysique.ens-lyon.fr/logo-csp.png" />
 
     <!-- Forces IE8+ into newest rendering engine even if on an intranet. This has to be defined before any script/style tags. -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
